@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/body.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/browse/swiper@7.3.1/swiper-bundle.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/body.css">
 
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
@@ -85,11 +84,9 @@
               <div class="swiper-slide"><img class="carousel" src="imagens/piscina_coberta_rumo_certo.jpg" alt="Entrada"></div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
+          <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-
-            
+          <div class="swiper-pagination" style="bottom: 11%;"></div>
 
           <!-- If we need navigation buttons -->
           
@@ -111,16 +108,16 @@
             <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img class="carousel" src="imagens/piscina_st_fe.jpeg" alt="Piscina"></div>
-              <div class="swiper-slide"><img class="carousel" style="width: auto;" src="imagens/quarto_st_fe.jpeg" alt="Quarto"></div>
+              <div class="swiper-slide"><img class="carousel" src="imagens/quarto_st_fe.jpeg" alt="Quarto"></div>
               <div class="swiper-slide"><img class="carousel" src="imagens/campo_st_fe.jpeg" alt="Campo"></div>
               <div class="swiper-slide"><img class="carousel" src="imagens/alojamento_st_fe.jpeg" alt="Alojamento_um"></div>
               <div class="swiper-slide"><img class="carousel" src="imagens/banheiro_st_fe.jpg" alt="Entrada"></div>
               <div class="swiper-slide"><img class="carousel" src="imagens/banheiro_dois_st_fe.jpg" alt="Entrada"></div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
+          <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
+          <div class="swiper-pagination" style="bottom: 13%;"></div>
 
           <!-- If we need navigation buttons -->
 
@@ -142,23 +139,21 @@
             tudo isso em um ambiente amplo e agradável para o melhor acolhimento ao paciente.</p>
             <div class="swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img class="carousel" src="imagens/refeitorio_st_fe.jpg" alt="Refeitório"></div>
-              <div class="swiper-slide"><img class="carousel" src="imagens/alojamento_st_fe.jpeg" alt="Alojamento_um"></div>
-              <div class="swiper-slide"><img class="carousel" style="width: auto;" src="imagens/quarto_st_fe.jpeg" alt="Quarto"></div>
-              <div class="swiper-slide"><img class="carousel" src="imagens/piscina_st_fe.jpeg" alt="Piscina"></div>
-              <div class="swiper-slide"><img class="carousel" src="imagens/campo_st_fe.jpeg" alt="Campo"></div>
-              <div class="swiper-slide"><img class="carousel" src="imagens/banheiro_st_fe.jpg" alt="Entrada"></div>
-              <div class="swiper-slide"><img class="carousel" src="imagens/banheiro_dois_st_fe.jpg" alt="Entrada"></div>
+              <div class="swiper-slide"><img class="carousel" src="imagens/refeitorio_salto.jpg" alt="Refeitório"></div>
+              <div class="swiper-slide"><img class="carousel" src="imagens/refeiorio_dois_salto.jpg" alt="Refeitório_dois"></div>
+              <div class="swiper-slide"><img class="carousel" src="imagens/almoxarifado_salto.jpg" alt="Almoxarife"></div>
+              <div class="swiper-slide"><img class="carousel" src="imagens/externa_salto.jpg" alt="Externa''"></div>
+              <div class="swiper-slide"><img class="carousel" src="imagens/escritorio_salto.jpg" alt="Primeira"></div>
+              <div class="swiper-slide"><img class="carousel" src="imagens/quadra_salto.jpg" alt="Entrada"></div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
+            
+          <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-
+          <div class="swiper-pagination" style="bottom: 15%;"></div>
           <!-- If we need navigation buttons -->
-
           </div>
-          <a href="#" class="btn btn-primary">Saiba mais</a>
+          <a href="#" class="btn btn-primary">Saiba mais</a>  
         </div>
       </div>
 
@@ -168,12 +163,34 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+        },
+        pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+        },
+        autoplay: {
+       delay: 5000,
+        },
       });
 </script>
 
 </body>
 
 <footer>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -181,4 +198,5 @@
             </div>
         </div>
     </div>
+    
 </footer>
