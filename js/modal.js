@@ -6,9 +6,31 @@ function onClick(element) {
     modal.style.display = "block";
     console.log(element);
     modalImg.src = element.src;
+    // captionText.innerHTML = element.alt;
+
+    var swiper2 = new Swiper(".swiper2", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        },
+        autoplay: {
+       delay: 5000,
+        },
+        loop: true,
+      });
     
-  //  captionText.innerHTML = element.alt;
+    swiper2.update();
   
+}
+
+function onClose(element) {
+    modal = document.getElementById("myModal");
+    modal.style.display = "none";
+    swiper2.update();
 }
 
 var swiper = new Swiper(".swiper", {
