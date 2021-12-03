@@ -11,7 +11,7 @@ h1 {
 
 .card {
     background-color: white;
-    padding: 20px;
+    
     margin: 20px auto;
     border-radius: 2px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
@@ -121,8 +121,18 @@ img.carousel {
     
 }
 
+.swiper-button-prev {
+    z-index: 0;
+    
+}
 .swiper-pagination {
     display: none;
+}
+
+
+
+footer {
+    height: 200px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -179,7 +189,7 @@ img.carousel {
         width: 100%;
     }
     .swiper.swiper-initialized.swiper-horizontal.swiper-ios {
-        z-index: 0;
+        z-index: 0;https://www.mir4global.com/?lang=pt
     }
 
     .swiper-button-next {
