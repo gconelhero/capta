@@ -11,8 +11,11 @@ body {
   background-color: #ffffff;
   font-family: sans-serif;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .120);
-  display: flex;
+  
   z-index: 1;
+  display: flex;
+  margin: auto;
+  justify-content: center;
   
 }
 
@@ -24,15 +27,21 @@ body {
 
 }
 
+
 .menu_right#menu_principal {
   margin: auto;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100% auto  ;
   z-index: 1;
 
 }
 
+.contatomenu {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+}
 #endereco_row {
   margin-top: 22.825px;
   margin-right: 22.438px;
