@@ -43,7 +43,7 @@ if ( window.scroll > 80.00000000000000 || document.documentElement.scrollTop > 8
     document.getElementById("whatsmenu").style.transition = "0.2s linear";
     document.getElementById("numtel").style.transition = "0.2s linear";
     document.getElementById("logo_mobile").style.width = "50px";
-    document.getElementById("icon_btn").style.fontSize = "58px";
+    document.getElementById("icon_btn").style.fontSize = "60px";
     document.getElementById("icon_btn").style.margin = "10.15px";
     
 } 
