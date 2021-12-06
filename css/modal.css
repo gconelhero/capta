@@ -34,6 +34,11 @@
   vertical-align: middle;
 }
 
+.img_nova {
+  width: 280px;
+  height: 205px;
+}
+
 
 /* Add a hover effect (blue shadow) */
 .img_nova:hover {
@@ -124,8 +129,8 @@
   }
 
   .img_nova {
-    width: 230px;
-    height: 155px;
+    width: 280px;
+    height: 195px;
   }
 }
 

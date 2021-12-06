@@ -148,6 +148,26 @@ a:hover {
 
 }
 
+.img_tratamento#tcc {
+  width: 28px;
+}
+
+.img_tratamento#tcc {
+  width: 18%;
+}
+
+.img_tratamento#gc {
+  width: 25%;
+}
+
+.img_tratamento#passos {
+  width: 15%;
+}
+
+.img_tratamento#medicamentoso {
+  width: 28%;
+}
+
 @media only screen and (max-width: 800px) {
   .logo_icon {
     margin: 0;
@@ -271,6 +291,26 @@ a:hover {
     justify-content: center;
     font-size: 50px;
 
+  }
+
+  .img_tratamento#tcc {
+    width: 100%;
+  }
+
+  .img_tratamento#tcre {
+    width: 70%;
+  }
+
+  .img_tratamento#gc {
+    width: 85%;
+  }
+  
+  .img_tratamento#passos {
+    width: 50%;
+  }
+
+  .img_tratamento#medicamentoso {
+    width: 92%;
   }
 }
 
