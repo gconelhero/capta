@@ -71,7 +71,6 @@ h1 {
 img.carousel {
     width: 100% auto;
 
-    max-width: 90%;
     margin-bottom: 20px;
     z-index: 9900;
     text-align: center;
@@ -160,14 +159,6 @@ footer {
         margin-bottom: 20px;
     }
 
-    img.carousel {
-        width: 100%;
-        height: auto;
-        
-        vertical-align: middle;
-        margin-bottom: 20px;
-        z-index: 0;
-    }
     /* .swiper foi alterado no css swiper-bundle (z-index: 1 = 0)*/
     .swiper {
         width: 100%;

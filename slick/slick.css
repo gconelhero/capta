@@ -29,8 +29,10 @@
     padding: 0;
 }
 .slick-list:focus
+
 {
     outline: none;
+    
 }
 .slick-list.dragging
 {
