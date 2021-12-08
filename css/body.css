@@ -1,7 +1,21 @@
 body {
     position: relative;
-    margin-top: 110px;
+    margin-top: 110px; /* margin-top: 110px */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.body-index {
+    position: relative;
+    margin-top: 0px; /* margin-top: 110px */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 h1 {
     font-size: 40px;
     font-weight: bold;
@@ -15,9 +29,42 @@ h1 {
     margin: 20px auto;
     border-radius: 2px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
-    width: auto;
 
 }
+.row#body-icons{
+    text-align: center;
+    margin-top: auto;
+}
+
+.row#banner { 
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    pointer-events: none;
+  }
+#texto-banner {
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0px 1px 10px black;
+
+}
+
+.swiper-slide#banner {
+    top: 0px;
+    object-fit: cover;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    z-index: 0;
+    filter: brightness(50%);
+  }
 
 .card-header {
     background-color: #f5f5f5;
@@ -43,6 +90,10 @@ h1 {
     font-size: 20px;
 }
 
+.card-img-top {
+    width: 30%;
+}
+
 .btn-primary {
     background-color: #50a7e0;
     font-weight: bold;
@@ -66,6 +117,21 @@ h1 {
     border-color: #0085dd;
     color: white;
 
+}
+
+#caixa-texto {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#texto1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 img.carousel {
@@ -133,7 +199,6 @@ img.carousel {
 .swiper-pagination {
     display: none;
 }
-
 
 
 footer {

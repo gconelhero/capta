@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css.map">
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="css/body.css">
@@ -24,27 +26,25 @@
   
   <header class="header">
     
-    <div id="menu" class="menu">
-      <a href="#"><img id="logo" class="logo" src="imagens/logo_teste003.png" alt=""></a>
+    <div id="menu" class="menu-index">
+      <a href="#"><img id="logo" class="logo-index" src="imagens/logo_teste003.png" alt="logotipo"></a>
       <div class="menu_right" id="menu_principal">
-        <a id="btn_menu" class="btn_menu" href="index.html">Início</a>
-        <a id="btn_menu" class="btn_menu" href="tratamento.html">Tratamento</a>
-        <a id="btn_menu" class="btn_menu" href="clinicas.html">Clínicas</a>
-        <a id="btn_menu" class="btn_menu" href="#">Remoção</a>
-        <a id="btn_menu" class="btn_menu" href="#">Contato</a>
+        <a id="btn_menu-index" class="btn_menu-index" href="index.html">Início</a>
+        <a id="btn_menu-index" class="btn_menu-index" href="tratamento.html">Tratamento</a>
+        <a id="btn_menu-index" class="btn_menu-index" href="clinicas.html">Clínicas</a>
+        <a id="btn_menu-index" class="btn_menu-index" href="remocao.html">Remoção</a>
+        <a id="btn_menu-index" class="btn_menu-index" href="contato.html">Contato</a>
       </div>
       <div class="menu_right" id="icon_menu" >
         <a href="javascript:void(0)" onclick="menuFunc()" class="icon_menu"><i id="icon_btn" class="fa fa-bars"></i></a>
-        <img class="menu_right" id="logo_mobile" src="logo_teste002.png">
+        <img class="menu_right" id="logo_mobile" src="">
       </div>
       <div class="contatomenu" id="contatomenu">
-      <a href="tel:067982204464" ><i id="telefone" style="display: flex; margin: auto; padding-right: 0px; justify-content: center;font-size: 50px;" class="fas fa-phone">
+      <a id="btn_menu-index" class="btn_menu-index" href="tel:067982204464" ><i id="telefone" class="fas fa-phone">
         </i><p class="numtel" id="numtel">(67) 98220-4464</p>
-      <a href="https://wa.me/5567982204464" ><i id="whatsmenu" class="fab fa-whatsapp">
+      <a id="btn_menu-index" class="btn_menu-index" href="https://wa.me/5567982204464" ><i id="whatsmenu" class="fab fa-whatsapp">
         </i>
       </div>
-
-        
     </div>
 
       <div class="list_menu" id="list_menu">
@@ -58,9 +58,143 @@
         </ul>
       </div>
   </header>
+
+<body class="body-index">
+
   
-<body>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div id="banner" class="row">
+    <label id="texto-banner"><br><br>EXPECIALISTAS NO TRATAMENTO <br> PARA ABUSO DE ÁLCOOL E OUTRAS DROGAS</label>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/predio_um.jpg" alt="Entrada"></div>
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/externa_um_rumo_certo.jpg" alt="Entrada"></div>
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/piscina_rumo_certo.jpg" alt="Entrada"></div>
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/sala_visita_rumo_certo.jpg" alt="Entrada"></div>
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/refeiorio_dois_salto.jpg" alt="Refeitório_dois"></div>    
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/refeitorio_salto.jpg" alt="Refeitório_dois"></div>
+        <div class="swiper-lazy-preloader"></div>
+      </div>
+      <script>
+        var swiper = new Swiper(".swiper", {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              breakpoints: {
+                320: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+              },
+              pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+              },
+              autoplay: {
+              delay: 5000,
+              },
+              loop: true,
+              preloadImages: false,
+              lazy: true,
+            });
+      </script>
+    
+    </div>
+  </div>
+
+  <div id="caixa-texto" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p id="texto1">
+        O GrupoNova entende que o processo de desintoxicação por si só não é um tratamento para abuso de substâncias,<br>
+    
+      </div>
+    <div class="col-md-6">
+    <p id="texto1">
+      mas sim, uma parte de um contínuo cuidado para transtornos de abuso de substâncias.<br><br>
+    </p> 
+  </div>     
+  </div>
+  </div>
+    
+<div class="container">
+  <div id="body-icons" class="row">
+
+
+    <div class="col-md-4">
+      <img class="card-img-top" src="imagens/icones/Intervention.webp" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Intervenção</h5>
+        <p class="card-text">Profissionais licenciados e certificados que estão prontos para trabalhar com você e sua família, 
+          atendemos em todo o país, estamos disponíveis para ajudar no tratamento para abuso de álcool ou drogas.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <img class="card-img-top" src="imagens/icones/sober-living.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Vivendo Sóbrio</h5>
+        <p class="card-text">Instalações confortáveis ​​e bem equipadas para ajudá-lo no suporte e mantê-lo concentrado durante o tratamento.
+          Nossas clínicas podem servir como uma ponte para a vida cotidiana após o programa de reabilitação.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="col-md-4">
+      <img class="card-img-top" src="imagens/icones/inpatient-icon.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Internações</h5>
+        <p class="card-text">Programas de internação integral ou parcial que permitem que você ou seu ente querido se curem com conforto, 
+          e livres das distrações e gatilhos que contribuem para o uso de substâncias.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="body-icons" class="row">
+
+      <div class="col-md-4">
+        <img class="card-img-top" src="imagens/icones/outpatient-icon.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Personalizados</h5>
+          <p class="card-text">Programas personalizados e aprofundados de cuidados ambulatoriais regulares e intensivos 
+          que oferecem a flexibilidade para manter sua carreira, família e outros aspectos importantes de sua vida enquanto você está recebendo ajuda.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <img class="card-img-top" src="imagens/icones/rehab.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Reabilitação de Comportamento</h5>
+          <p class="card-text">Programas de reabilitação dinâmicos, intuitivos e assistidos, 
+            que permitem abordar as causas e os gatilhos do uso de substâncias e desenvolver 
+            mecanismos de enfrentamento para evitar recaídas na recuperação a longo prazo.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+      <img class="card-img-top" src="imagens/icones/dual-diagnosis-icon.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Diagnósticos Paralelos</h5>
+          <p class="card-text">Nossos médicos, terapeutas e especialistas em saúde comportamental trabalham 
+            lado a lado para abordar o impacto imediato do vício junto com quaisquer problemas de saúde mental 
+            subjacentes associados ao uso de substâncias.</p>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
 </body>
 
 <footer>
