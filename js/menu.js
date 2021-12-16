@@ -36,15 +36,21 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   document.getElementById("contatomenu").style.transition = "0.2s linear";
   document.getElementById("icon_btn").style.fontSize = "35px";
   document.getElementById("icon_btn").style.margin = "2px";
+  document.getElementById("icon_btn").style.color = "black";
 
   //document.getElementById("texto-banner").style.zIndex = "0";
   $("#texto-banner").css("color", "transparent");
   $("#texto-banner").css("transiction", "0.1s linear");
   $("#texto-banner").css("text-shadow", "0px 0px 0px transparent");
 
+  $("#texto-banner-mobile").css("color", "transparent");
+  $("#texto-banner-mobile").css("transiction", "0.1s linear");
+  $("#texto-banner-mobile").css("text-shadow", "0px 0px 0px transparent");
+
 
   $(".menu-index").css("background-color", "white");
   $(".menu-index").css("transition", "0.2s linear");
+  $("#logo-mobile").css("width", "100px");
   //document.getElementById("btn_menu-index").style.transition = "0.2s linear";
   $("btn_menu-index").css("transition", "0.2s linear");
 
@@ -86,6 +92,7 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   document.getElementById("logo_mobile").style.width = "50px";
   document.getElementById("icon_btn").style.fontSize = "60px";
   document.getElementById("icon_btn").style.margin = "10.15px";
+  document.getElementById("icon_btn").style.color = "grey";
 
   //document.getElementById("texto-banner").style.zIndex = "1";
   
@@ -93,8 +100,13 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   $("#texto-banner").css("transiction", "0.1s linear");
   $("#texto-banner").css("text-shadow", "0px 1px 10px black");
 
+  $("#texto-banner-mobile").css("color", "white");
+  $("#texto-banner-mobile").css("transiction", "0.1s linear");
+  $("#texto-banner-mobile").css("text-shadow", "0px 1px 10px black");
+
   $(".menu-index").css("background-color", "transparent");
   $(".menu-index").css("transition", "0.2s linear");
+  $("#logo-mobile").css("width", "260px");
 
   //document.getElementById("btn_menu-index").style.transition = "0.2s linear";
   $("btn_menu-index").css("transition", "0.2s linear");
@@ -118,3 +130,8 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   $("a#btn_menu-index").css("color", "whitesmoke");
   }
 }
+
+new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--script"))();
+new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--script_banner"))();
+new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--script_logo"))();
+new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--passo_4"))();

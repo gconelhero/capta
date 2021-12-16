@@ -28,11 +28,12 @@
     
     <div id="menu" class="menu-index">
       <a href="#"><img id="logo" class="logo-index" src="imagens/logo_teste003.png" alt="logotipo"></a>
+      <a href="#"><img id="logo-mobile" class="logo-index" src="imagens/logo_teste003.png" alt="logotipo"></a>
       <div class="menu_right" id="menu_principal">
         <a id="btn_menu-index" class="btn_menu-index" href="index.html">Início</a>
         <a id="btn_menu-index" class="btn_menu-index" href="tratamento.html">Tratamento</a>
         <a id="btn_menu-index" class="btn_menu-index" href="clinicas.html">Clínicas</a>
-        <a id="btn_menu-index" class="btn_menu-index" href="remocao.html">Remoção</a>
+        <a id="btn_menu-index" class="btn_menu-index" href="#servicos">Serviços</a>
         <a id="btn_menu-index" class="btn_menu-index" href="contato.html">Contato</a>
       </div>
       <div class="menu_right" id="icon_menu" >
@@ -52,7 +53,7 @@
           <li><a href="index.html">Início</a></li>
           <li><a href="tratamento.html">Tratamento</a></li>
           <li><a href="clinicas.html">Clínicas</a></li>
-          <li><a href="remocao.html">Remoção</a></li>
+          <li><a href="#servicos">Serviços</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li style="align-items: center;"><img id="logo_icon" class="logo_icon" src="" alt=""></li>
         </ul>
@@ -60,10 +61,10 @@
   </header>
 
 <body class="body-index">
-
   
-  <div id="banner" class="row">
+  <div style="margin: 0px;" id="banner" class="row">
     <label id="texto-banner">EXPECIALISTAS NO TRATAMENTO <br> PARA ABUSO DE ÁLCOOL E OUTRAS DROGAS</label>
+    <label id="texto-banner-mobile">EXPECIALISTAS NO TRATAMENTO <br> PARA ABUSO DE ÁLCOOL E OUTRAS DROGAS</label>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/predio_um.jpg" alt="Entrada"></div>
@@ -82,11 +83,11 @@
               },
               breakpoints: {
                 320: {
-                  slidesPerView: 3,
+                  slidesPerView: 1,
                   spaceBetween: 0,
                 },
                 768: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                   spaceBetween: 0,
                 },
                 1024: {
@@ -110,88 +111,106 @@
     </div>
   </div>
 
+  
+    
   <div id="caixa-texto" class="container">
     <div class="row">
+      <h1 id="como_funciona" class="banner">Como Funciona?</h1>
       <div class="col-md-4">
         <p id="texto1">
-          <p>1º </p><i id="icon-index" style="color: #00b1ff;" class="fas fa-users"></i><br>
-        Pré-atendimento
-        </p>
-        <p id="texto2">
-          entrando com o texo!!!!!
+          <h4>1º Passo</h4><i id="icon-index" style="color: #00b1ff;" class="fas fa-users"></i><br>
+            <h4>Pré-atendimento</h4>
           </p>
+        <p id="texto2">
+          Um primeiro contato com a família para entendermos o contexto e o perfil do paciente.
+        </p>
       </div>
 
       <div class="col-md-4">
 
         <p id="texto1">
-          <p>2º </p><i id="icon-index" style="color: #00b1ff;" class="fas fa-filter"></i><br>
-           Planejamento
+          <h4>2º Passo</h4><i id="icon-index" style="color: #00b1ff;" class="fas fa-filter"></i><br>
+          <h4>Planejamento</h4>
         </p>
         <p id="texto2">
-          entrando com o texo!!!!!
+          Filtramos as possibilidades que melhor atendem as necessidades da família e do paciente.
         </p>
       </div>
 
       <div class="col-md-4">
         <p id="texto1">
-          <p>3º </p><i id="icon-index" style="color: #00b1ff;" class="fas fa-ambulance"></i><br>
-           Deslocamento
+          <h4>3º Passo</h4><i id="icon-index" style="color: #00b1ff;" class="fas fa-ambulance"></i><br>
+           <h4>Deslocamento</h4>
         </p>
         <p id="texto2">
-          entrando com o texo!!!!!
+          Fazemos o deslocamento do paciente para o Centro de Tratamento de escolha da família ou do paciente.
         </p>
       </div>
 
-      <div class="col-md-12">
+      <div id="passo_4" class="col-md-12">
         <p id="texto1">
-          <p>4º </p><i id="icon-index" style="color: #00b1ff;" class="fas fa-user-md"></i><br>
-          Suporte
+          <h4 id="passo_4" class="passo_4" style="justify-content: center; display: flex; margin: auto;">4º Passo</h4><i id="icon-index" style="color: #00b1ff;" class="fas fa-user-md"></i><br>
+          <h4 id="titulo" class="passo_4">Suporte</h4>
         </p>
-        <p id="texto2">
-          entrando com o texo!!!!!
+        <p class="passo_4" style="justify-content: center; display: flex; margin: auto;" class="col-md-8" style="font-weight: bold;" id="texto2">
+          Oferecemos suporte técnico e orientação para os familiares e paciente até que o processo seja concluído com sucesso. 
+          Para isso contamos com médicos, terapeutas e especialistas em saúde comportamental.
         </p>
       </div>
-
 
     </div>
   </div>
 
-  <div id="caixa-texto" class="container">
+  
+  <div id="caixa-texto" class="card container">
+    <h1 id="titulo" class="quem-somos">Quem Somos?</h1>
+
     <div class="row">
-      <div class="col-md-6">
-        <p id="texto1">
-        O GrupoNova entende que o processo de desintoxicação por si só não é um tratamento para abuso de substâncias,<br>
+      <div class="col-md-12">
+        <p style="font-size: 30px;" id="texto2">
+          Somos especializados em desintoxicação com supervisão médica e terapêutica de pacientes que sofrem por uso de álcool e outras drogas.
+        </p>
+        <p style="font-size: 30px;" id="texto2">
+          Estamos atuando há mais de 20 anos, assessoramos e prestamos nossos serviços para diversos centros de tratamento pelo Brasil, 
+          e já atendemos milhares de pacientes e seus familiares ao longo desses anos.
+          Possuímos experiência em tratar e encaminhar pacientes
+          Contamos com profissionais que são referência nos tratamenos psicológicos, 
+          psiquiátricos e terapêuticos.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <p style="font-size: 30px;" id="texto2">
+        O Grupo Nova entende que o tratamento bem como a prevenção para abuso de substâncias,
+        é um processo de trabalho que deve ser realizado com cuidado e responsabilidade,
+        é a parte fundamental de um contínuo cuidado.<br><br>
     
       </div>
-    <div class="col-md-6">
-    <p id="texto1">
-      mas sim, uma parte de um contínuo cuidado para transtornos de abuso de substâncias.<br><br>
+    
     </p> 
   </div>     
   </div>
   </div>
-  
-  
-  
-  <div id="caixa-texto" class="container">  
-    <div class="row">
+
+  <div style="padding: 30px;" id="caixa-texto" class="container">
+    <div style="background-color: rgb(230, 230, 230); padding: 0.5px;" class="row">
       <div class="col-md-12">
-        <p id="texto1">
-          Somos especializados em desintoxicação com supervisão médica e terapêutica de pacientes que sofrem por uso de álcool e outras drogas.
-        </p>
       </div>
     </div>
   </div>
     
 <div class="container">
   <div id="body-icons" class="row">
+    <h1 class="modalidades">Modalidades</h1>
 
 
     <div class="col-md-4">
       <img class="card-img-top" src="imagens/icones/Intervention.webp" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Intervenção</h5>
+        <h4>Intervenção</h4>
         <p class="card-text">Profissionais licenciados e certificados que estão prontos para trabalhar com você e sua família, 
           atendemos em todo o país, estamos disponíveis para ajudar no tratamento para abuso de álcool ou drogas.</p>
       </div>
@@ -200,7 +219,7 @@
     <div class="col-md-4">
       <img class="card-img-top" src="imagens/icones/sober-living.png" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Vivendo Sóbrio</h5>
+        <h4>Vivendo Sóbrio</h4>
         <p class="card-text">Instalações confortáveis ​​e bem equipadas para ajudá-lo no suporte e mantê-lo concentrado durante o tratamento.
           Nossas clínicas podem servir como uma ponte para a vida cotidiana após o programa de reabilitação.
         </p>
@@ -211,7 +230,7 @@
     <div class="col-md-4">
       <img class="card-img-top" src="imagens/icones/inpatient-icon.png" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Internações</h5>
+        <h4>Internações</h4>
         <p class="card-text">Programas de internação integral ou parcial que permitem que você ou seu ente querido se curem com conforto, 
           e livres das distrações e gatilhos que contribuem para o uso de substâncias.
         </p>
@@ -219,13 +238,13 @@
     </div>
   </div>
 
-  <div class="container">
+  <div style="padding-top: 50px;" class="container">
     <div id="body-icons" class="row">
 
       <div class="col-md-4">
         <img class="card-img-top" src="imagens/icones/outpatient-icon.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Personalizados</h5>
+          <h4>Personalizados</h4>
           <p class="card-text">Programas personalizados e aprofundados de cuidados ambulatoriais regulares e intensivos 
           que oferecem a flexibilidade para manter sua carreira, família e outros aspectos importantes de sua vida enquanto você está recebendo ajuda.</p>
         </div>
@@ -234,7 +253,7 @@
       <div class="col-md-4">
         <img class="card-img-top" src="imagens/icones/rehab.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Reabilitação de Comportamento</h5>
+          <h4>Reabilitação de Comportamento</h4>
           <p class="card-text">Programas de reabilitação dinâmicos, intuitivos e assistidos, 
             que permitem abordar as causas e os gatilhos do uso de substâncias e desenvolver 
             mecanismos de enfrentamento para evitar recaídas na recuperação a longo prazo.</p>
@@ -244,16 +263,72 @@
       <div class="col-md-4">
       <img class="card-img-top" src="imagens/icones/dual-diagnosis-icon.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Diagnósticos Paralelos</h5>
+          <h4>Diagnósticos Paralelos</h4>
           <p class="card-text">Nossos médicos, terapeutas e especialistas em saúde comportamental trabalham 
             lado a lado para abordar o impacto imediato do vício junto com quaisquer problemas de saúde mental 
             subjacentes associados ao uso de substâncias.</p>
         </div>
       </div>
+    </div>
+
+
       
 
+      <div id="caixa-texto" class="container">
+        <div class="divisao" style="background-color: black; padding: 0.5px;" class="row">
+          <div class="col-md-12">
+          </div>
+        </div>
+        
+      </div>
+      
     </div>
   </div>
+
+<div id="servicos" class="container">
+  <div id="body-icons" class="row">
+    <h1 id="servicos" class="modalidades">Serviços</h1>
+
+      <div id="servicos" class="card col-md-5">
+        <img class="card-img-top" src="imagens/remocao_logo.png" alt="Card image cap">
+        <div class="card-body">
+          <h4>Remoção Especializada</h4>
+          <p class="card-text">A remoção especializada do paciente 
+            está entre os pontos cruciais para um tratamento bem sucedido. 
+            O GrupoNova conta com equipes de remoção especializadas e experientes em localizar, 
+            convencer e resgatar o paciente em qualquer estágio da dependência com total segurança e discrição,
+          </p>
+            
+        </div>
+        <a id="servicos" href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+      </div>
+
+      <div id="servicos" class="card col-md-5">
+      <img id="ambulancia" class="card-img-top" src="imagens/ambulancia.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4>Internação e Encaminhamento</h4>
+          <p class="card-text">O GrupoNova percebe que o processo de desintoxicação por si só não constitui tratamento para abuso de substâncias, 
+            mas é parte de um contínua de cuidados para o tratamento de abuso de substâncias.
+            Para isso contamos com médicos, terapeutas e especialistas em saúde comportamental.
+          </p>
+            
+        </div>
+        <a id="servicos" href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+      </div>
+    </div>
+
+      <div id="caixa-texto" class="container">
+        <div style="background-color: black; padding: 0.5px;" class="row">
+          <div class="col-md-12">
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+
 </body>
 
 <footer>

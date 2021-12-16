@@ -201,6 +201,50 @@
 }
 
 @media only screen and (max-width: 800px) {
+  /*:root {
+    --script: $(document).ready(function(){$('menu#menu').attr('class','menu')});
+    
+  }*/
+
+  :root {
+    --script_banner: $(document).ready(function(){$('row#banner').attr('id','banner-mobile')});
+    
+  }
+
+  :root {
+    --script_logo: $(document).ready(function(){$('logo-index#logo').attr('id','logo-mobile')});
+    
+  }
+
+  .contatomenu {
+    display: none;
+}
+
+.icon_menu {
+    float: right;
+}
+
+  #texto-banner {
+    display: none;
+  }
+
+  
+  #banner_mobile {
+    margin-top: 100px;
+  }
+
+  .logo-index {
+    display: none;
+    
+  }
+
+  .logo-index#logo-mobile {
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 260px;
+  }
+  
   .logo_icon {
     margin: 0;
     display: inline-block;
@@ -238,7 +282,7 @@
   .icon_menu #icon_btn {
     display: inline-block;
     font-size: 58px; /*35px*/
-    color: #000000;
+    color: rgb(110, 107, 107);
     object-fit: contain;
     margin: 10.15px;
     overflow: hidden;
@@ -288,7 +332,7 @@
   }
 
   .logo {
-    display: none;
+    display: block;
   }
 
   .logo_right {

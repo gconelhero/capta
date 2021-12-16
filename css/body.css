@@ -48,7 +48,7 @@ h1 {
 #texto-banner {
     z-index: 1;
     position: absolute;
-    top: 100px;
+    top: 120px;
     font-size: 40px;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -58,6 +58,8 @@ h1 {
     transition: 0.2s linear;
 
 }
+
+
 
 #icon-index {
     font-size: 100px;
@@ -133,7 +135,7 @@ h1 {
 }
 
 #texto1 {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
@@ -219,7 +221,89 @@ footer {
     height: 200px;
 }
 
+.modalidades {
+    margin-bottom: 50px;
+}   
+
+.divisao {
+    margin: 50px;
+}
+
+.card-img-top#ambulancia {
+    width: 220px;
+    height: auto;
+}
+.card#servicos {
+    align-items: center;
+    
+
+}
+
+.container#servicos {
+    align-items: center;
+    text-align: center;
+
+}
+
+.btn#servicos {
+    width: 100%;
+}
+.fas.fa-user-md#icon-index {
+    font-size: 230px;
+    margin-top: 10px;
+}
+.passo_4#passo_4 {
+    font-size: 40px;
+}
+
+.col-md-12#passo_4 {
+    margin-top: 30px;
+
+}
+.passo_4#titulo {
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.passo_4#texto2 {
+    font-size: 30px;
+    
+}
+
+.card#caixa-texto {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: rgb(241, 241, 241);
+}
+
+.quem-somos#titulo {
+    font-size: 50px;
+    margin-top: 30px;
+}
+
 @media only screen and (max-width: 800px) {
+
+    :root {
+        --script_banner: $(document).ready(function(){$('.passo_4').attr('class','')});
+        
+      }
+
+      .fas.fa-user-md#icon-index {
+        font-size: 100px;
+    }
+
+    #texto-banner-mobile {
+        z-index: 1;
+        position: absolute;
+        top: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-shadow: 0px 1px 10px black;
+        margin-top: 110px;
+        transition: 0.2s linear;
+    }
 
     .card {
         width: 100%;
