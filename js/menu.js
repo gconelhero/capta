@@ -5,11 +5,15 @@ document.getElementsByTagName('head')[0].appendChild(jqscript);
 
 function menuFunc() {
     var list_menu = document.getElementById("list_menu");
+    var texto_banner_mobile = document.getElementById("texto-banner-mobile");
       if (list_menu.style.display === "block") {
         list_menu.style.display = "none";
+        texto_banner_mobile.style.display = "block";
+
         
       } else {
         list_menu.style.display = "block";
+        texto_banner_mobile.style.display = "none";
   
       }
   }
@@ -73,6 +77,9 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
 });
 
   $("a#btn_menu-index").css("color", "black");
+
+  $("#list").css("top", "22px");
+
 } else {
   document.getElementById("logo").style.width = "280px";
   //document.getElementsByClassName("logo-index").style.filter = "grayscale(1) invert(1)";
@@ -108,6 +115,8 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   $(".menu-index").css("transition", "0.2s linear");
   $("#logo-mobile").css("width", "260px");
 
+  $("#list").css("top", "63px");
+
   //document.getElementById("btn_menu-index").style.transition = "0.2s linear";
   $("btn_menu-index").css("transition", "0.2s linear");
     
@@ -135,3 +144,4 @@ new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--scr
 new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--script_banner"))();
 new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--script_logo"))();
 new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--passo_4"))();
+

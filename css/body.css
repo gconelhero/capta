@@ -227,6 +227,7 @@ footer {
 
 .divisao {
     margin: 50px;
+
 }
 
 .card-img-top#ambulancia {
@@ -281,6 +282,14 @@ footer {
     margin-top: 30px;
 }
 
+.container#container-mobile {
+    padding-top: 50px;
+}
+
+#texto2 {
+    font-size: 30px;
+}
+
 @media only screen and (max-width: 800px) {
 
     :root {
@@ -288,8 +297,30 @@ footer {
         
       }
 
-      .fas.fa-user-md#icon-index {
+      :root {
+        --mostrar-mais: $(document).ready(function(){$('.passo_4').('overflow','')});
+        
+      }
+
+    .fas.fa-user-md#icon-index {
         font-size: 100px;
+    }
+
+    .container#container-mobile {
+        padding-top: 0px;
+    }
+
+    #servicos {
+        margin-bottom: 20px;
+    }
+
+    #texto2 {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    
     }
 
     #texto-banner-mobile {
@@ -308,6 +339,14 @@ footer {
     .card {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .card-text#mostrar-mais {
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        margin:5px 0 0 0;
+
     }
 
     .row {
