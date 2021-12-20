@@ -88,7 +88,7 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
 
   $("a#btn_menu-index").css("color", "black");
 
-  $("#list").css("top", "22px");
+  $("#list").css("top", "21px");
 
 } else {
   document.getElementById("logo").style.width = "280px";
