@@ -18,6 +18,16 @@ function menuFunc() {
       }
   }
 
+function menuClose() {
+  var list_menu = document.getElementById("list_menu");
+  var texto_banner_mobile = document.getElementById("texto-banner-mobile");
+    if (list_menu.style.display === "block") {
+      list_menu.style.display = "none";
+      texto_banner_mobile.style.display = "block";
+    }
+}
+
+
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
 if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 60.00000000000000) {
