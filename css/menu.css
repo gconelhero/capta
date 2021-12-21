@@ -234,7 +234,7 @@
   }
 
   .list#list {
-    top: 63px;
+    top: 77px;
   }
 
   .contatomenu {
@@ -321,7 +321,7 @@
     width: 100%;
     margin: auto;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .120);
-    top: 0px;
+    top: 20px;
     
   }
   
@@ -330,7 +330,7 @@
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 22px;
+    top: 0px;
   }
 
   .list li {

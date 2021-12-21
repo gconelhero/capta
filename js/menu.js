@@ -90,7 +90,7 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
 
   $("a#btn_menu-index").css("color", "black");
 
-  $("#list").css("top", "21px");
+  $("#list").css("top", "46px");
 
 } else {
   document.getElementById("logo").style.width = "280px";
@@ -127,7 +127,7 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   $(".menu-index").css("transition", "0.2s linear");
   $("#logo-mobile").css("width", "260px");
 
-  $("#list").css("top", "63px");
+  $("#list").css("top", "77px");
   $("#text-menu").css("fontSize", "0px");
   $("#text-menu").css("display", "initial");
 
