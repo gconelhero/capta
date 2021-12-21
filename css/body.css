@@ -218,7 +218,8 @@ img.carousel {
 
 
 footer {
-    height: 200px;
+    text-align: center;
+    margin-top: auto;
 }
 
 .modalidades {
@@ -290,6 +291,10 @@ footer {
     font-size: 30px;
 }
 
+#btn_menu-index-mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 800px) {
 
     :root {
@@ -301,6 +306,36 @@ footer {
         --mostrar-mais: $(document).ready(function(){$('.passo_4').('overflow','')});
         
       }
+
+      .bt-whatsapp-site {
+        position: fixed;
+        left: 0px;
+        bottom: 20px;
+        z-index: 9999;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 14px 15px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #ededed;
+        
+      }
+
+    #btn_menu-index {
+        display: block;
+    }
+
+    #numtel {
+        display: block;
+    }
 
     .fas.fa-user-md#icon-index {
         font-size: 100px;
@@ -417,7 +452,7 @@ footer {
     footer .container {
         width: 100%;
         bottom: 0%;
-        margin-top: 20px;
+        height: 0px;
     }
 
 

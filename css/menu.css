@@ -11,6 +11,10 @@
   
 }
 
+#text-menu {
+  display: none;
+}
+
 .menu-index {
   background-color: transparent;
   font-family: sans-serif;
@@ -313,7 +317,7 @@
   .list_menu {
     display: block;
     background-color: rgb(255, 255, 255);
-    height: 220px;
+    height: 160px;
     width: 100%;
     margin: auto;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .120);

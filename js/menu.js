@@ -70,6 +70,8 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
 
   var elements = document.getElementsByClassName("btn_menu-index")
   
+  
+  $("#text-menu").css("fontSize", "large");
   /*
   for(var i = 0; i < elements.length; i++) {
     
@@ -126,6 +128,8 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   $("#logo-mobile").css("width", "260px");
 
   $("#list").css("top", "63px");
+  $("#text-menu").css("fontSize", "0px");
+  $("#text-menu").css("display", "initial");
 
   //document.getElementById("btn_menu-index").style.transition = "0.2s linear";
   $("btn_menu-index").css("transition", "0.2s linear");
