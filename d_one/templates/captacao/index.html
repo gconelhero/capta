@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    {% load static %}
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="logo_teste002.ico"/>
+    <link rel="icon" type="image/x-icon" href="{% static 'logo_teste002.ico' %}">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css.map">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-5.1.3-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-5.1.3-dist/css/bootstrap.css.map' %}">
 
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="css/body.css">
-    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/body.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/modal.css' %}">
 
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
-    <script type="text/javascript" src="/js/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="/js/modal.js"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery/jquery-3.0.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/swiper-bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/modal.js' %}"></script>
   </head>
   
   <title>Grupo Nova</title>
@@ -27,8 +32,8 @@
   <header class="header">
     
     <div id="menu" class="menu-index">
-      <a href="#"><img id="logo" class="logo-index" src="imagens/logo_teste003.png" alt="logotipo"></a>
-      <a href="#"><img id="logo-mobile" class="logo-index" src="imagens/logo_teste003.png" alt="logotipo"></a>
+      <a href="#"><img id="logo" class="logo-index" src="media/imagens/logo_teste003.png" alt="logotipo"></a>
+      <a href="#"><img id="logo-mobile" class="logo-index" src="media/imagens/logo_teste003.png" alt="logotipo"></a>
       <div class="menu_right" id="menu_principal">
         <a id="btn_menu-index" class="btn_menu-index" href="#">Início</a>
         <a id="btn_menu-index" class="btn_menu-index" href="#tratamento-mobile">Tratamento</a>
@@ -68,12 +73,12 @@
     <label id="texto-banner-mobile">EXPECIALISTAS NO TRATAMENTO <br> PARA ABUSO DE ÁLCOOL E OUTRAS DROGAS</label>
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/predio_um.jpg" alt="Entrada"></div>
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/externa_um_rumo_certo.jpg" alt="Entrada"></div>
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/piscina_rumo_certo.jpg" alt="Entrada"></div>
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/sala_visita_rumo_certo.jpg" alt="Entrada"></div>
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/refeiorio_dois_salto.jpg" alt="Refeitório_dois"></div>    
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="imagens/refeitorio_salto.jpg" alt="Refeitório_dois"></div>
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/predio_um.jpg" alt="Entrada"></div>
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/externa_um_rumo_certo.jpg" alt="Entrada"></div>
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/piscina_rumo_certo.jpg" alt="Entrada"></div>
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/sala_visita_rumo_certo.jpg" alt="Entrada"></div>
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/refeiorio_dois_salto.jpg" alt="Refeitório_dois"></div>    
+        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/refeitorio_salto.jpg" alt="Refeitório_dois"></div>
         <div class="swiper-lazy-preloader"></div>
       </div>
       <script>
@@ -178,7 +183,7 @@
 
 
     <div class="col-md-4">
-      <img class="card-img-top" src="imagens/icones/Intervention.webp" alt="Card image cap">
+      <img class="card-img-top" src="media/imagens/icones/Intervention.webp" alt="Card image cap">
       <div class="card-body">
         <h4>Intervenção</h4>
         <p class="card-text">Profissionais licenciados e certificados que estão prontos para trabalhar com você e sua família, 
@@ -188,7 +193,7 @@
 
 
     <div class="col-md-4">
-      <img class="card-img-top" src="imagens/icones/sober-living.png" alt="Card image cap">
+      <img class="card-img-top" src="media/imagens/icones/sober-living.png" alt="Card image cap">
       <div class="card-body">
         <h4>Vivendo Sóbrio</h4>
         <p class="card-text">Instalações confortáveis ​​e bem equipadas para ajudá-lo no suporte e mantê-lo concentrado durante o tratamento.
@@ -199,7 +204,7 @@
     
 
     <div class="col-md-4">
-      <img class="card-img-top" src="imagens/icones/inpatient-icon.png" alt="Card image cap">
+      <img class="card-img-top" src="media/imagens/icones/inpatient-icon.png" alt="Card image cap">
       <div class="card-body">
         <h4>Internações</h4>
         <p class="card-text">Programas de internação integral ou parcial que permitem que você ou seu ente querido se curem com conforto, 
@@ -213,7 +218,7 @@
     <div id="body-icons" class="row">
 
       <div class="col-md-4">
-        <img class="card-img-top" src="imagens/icones/outpatient-icon.png" alt="Card image cap">
+        <img class="card-img-top" src="media/imagens/icones/outpatient-icon.png" alt="Card image cap">
         <div class="card-body">
           <h4>Personalizados</h4>
           <p class="card-text">Programas personalizados e aprofundados de cuidados ambulatoriais regulares e intensivos 
@@ -222,7 +227,7 @@
       </div>
 
       <div class="col-md-4">
-        <img class="card-img-top" src="imagens/icones/rehab.png" alt="Card image cap">
+        <img class="card-img-top" src="media/imagens/icones/rehab.png" alt="Card image cap">
         <div class="card-body">
           <h4>Reabilitação de Comportamento</h4>
           <p class="card-text">Programas de reabilitação dinâmicos, intuitivos e assistidos, 
@@ -232,7 +237,7 @@
       </div>
 
       <div class="col-md-4">
-      <img class="card-img-top" src="imagens/icones/dual-diagnosis-icon.png" alt="Card image cap">
+      <img class="card-img-top" src="media/imagens/icones/dual-diagnosis-icon.png" alt="Card image cap">
         <div class="card-body">
           <h4>Diagnósticos Paralelos</h4>
           <p class="card-text">Nossos médicos, terapeutas e especialistas em saúde comportamental trabalham 
@@ -262,14 +267,14 @@
             
               <div class="swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/predio_dois.jpg" alt="Prédio"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/predio_um.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/externa_um_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/piscina_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/quadra_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/sala_reuniao_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/sala_visita_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/piscina_coberta_rumo_certo.jpg" alt="Entrada"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/predio_dois.jpg" alt="Prédio"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/predio_um.jpg" alt="Entrada"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/externa_um_rumo_certo.jpg" alt="Entrada"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/piscina_rumo_certo.jpg" alt="Entrada"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/quadra_rumo_certo.jpg" alt="Entrada"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/sala_reuniao_rumo_certo.jpg" alt="Entrada"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/sala_visita_rumo_certo.jpg" alt="Entrada"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/piscina_coberta_rumo_certo.jpg" alt="Entrada"></div>
                 <div class="swiper-lazy-preloader"></div>
               </div>
   
@@ -308,12 +313,12 @@
             
               <div class="swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/piscina_st_fe.jpeg" alt="Piscina"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/quarto_st_fe.jpeg" alt="Quarto"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/campo_st_fe.jpeg" alt="Campo"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/alojamento_st_fe.jpeg" alt="Alojamento_um"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/banheiro_st_fe.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/banheiro_dois_st_fe.jpg" alt="Entrada"></div>
+                <div class="swiper-slide"><a data-toggle="lightbox"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/piscina_st_fe.jpeg" alt="Piscina"></a></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/quarto_st_fe.jpeg" alt="Quarto"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/campo_st_fe.jpeg" alt="Campo"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/alojamento_st_fe.jpeg" alt="Alojamento_um"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/banheiro_st_fe.jpg" alt="Entrada"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/banheiro_dois_st_fe.jpg" alt="Entrada"></div>
                 <div class="swiper-lazy-preloader"></div>
                 
               </div>
@@ -339,7 +344,7 @@
           </div>
 
         </div>
-  
+
   
   
       <div class="row">
@@ -350,11 +355,11 @@
             <h4 class="card-title">Clínica Masculina</h4>
               <div class="swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/refeiorio_dois_salto.jpg" alt="Refeitório_dois"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/almoxarifado_salto.jpg" alt="Almoxarife"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/externa_salto.jpg" alt="Externa''"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/escritorio_salto.jpg" alt="Primeira"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="imagens/quadra_salto.jpg" alt="Entrada"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/refeiorio_dois_salto.jpg" alt="Refeitório_dois"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/almoxarifado_salto.jpg" alt="Almoxarife"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/externa_salto.jpg" alt="Externa''"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/escritorio_salto.jpg" alt="Primeira"></div>
+                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/quadra_salto.jpg" alt="Entrada"></div>
                 <div class="swiper-lazy-preloader"></div>
               </div>
   
@@ -434,7 +439,7 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">Terapia Cognitiva Comportamental</h4>
-            <div><img id="tcc" class="img_tratamento" src="imagens/tratamento/TCC.jpg"></div><br>
+            <div><img id="tcc" class="img_tratamento" src="media/imagens/tratamento/TCC.jpg"></div><br>
             <p class="card-text">
               
               TCC é uma ferramenta poderosa no tratamento 
@@ -453,7 +458,7 @@
   <div class="card">
     <div class="card-body">
       <h4 class="card-title">Terapia Comportamental Racional Emotiva</h4>
-      <div><img id="tcre" class="img_tratamento" src="imagens/tratamento/TCER.jpeg"></div><br>
+      <div><img id="tcre" class="img_tratamento" src="media/imagens/tratamento/TCER.jpeg"></div><br>
       <p class="card-text"> 
         
         A TCRE pode ajudá-lo a reconhecer seus pensamentos negativos
@@ -480,7 +485,7 @@
   <div class="card">
     <div class="card-body">
       <h4 class="card-title">Gerenciamento de Contingência</h4>
-      <div><img id="gc" class="img_tratamento" src="imagens/tratamento/GC.jpg"></div><br>
+      <div><img id="gc" class="img_tratamento" src="media/imagens/tratamento/GC.jpg"></div><br>
       <p class="card-text"> 
 
         GC pode ser usado para tratar uma ampla variedade de vícios, 
@@ -511,7 +516,7 @@
   <div class="card">
     <div class="card-body">
       <h4 class="card-title">Os 12 Passos</h4>
-      <div><img id="passos" class="img_tratamento" src="imagens/tratamento/12passo.jpg"></div><br>
+      <div><img id="passos" class="img_tratamento" src="media/imagens/tratamento/12passo.jpg"></div><br>
       <p class="card-text"> 
         
         A terapia de facilitação de doze passos (programa de 12 passo) 
@@ -544,7 +549,7 @@
   <div class="card">
     <div class="card-body">
       <h4 class="card-title">Tratamento Medicamentoso</h4>
-      <div><img id="medicamentoso" class="img_tratamento" src="imagens/tratamento/Medicamento.jpg"></div>
+      <div><img id="medicamentoso" class="img_tratamento" src="media/imagens/tratamento/Medicamento.jpg"></div>
       <p class="card-text"> 
 
         A medicação pode desempenhar um papel importante 
@@ -569,12 +574,12 @@
   
 <div id="caixa-texto" class="container">
   <div id="divisao-card" class="divisao" style="background-color: rgb(230, 230, 230); padding: 0.5px;" class="row">
-    <div class="col-md-12">
+    <div id="contato" class="col-md-12">
     </div>
   </div>
 </div>
 
-<div id="contato" class="container">
+<div class="container">
   <div id="body-icons" class="row">
     <h1  class="modalidades">Contato</h1>
 
@@ -586,61 +591,52 @@
 
       <!--Grid column-->
       <div style="margin-bottom: 0%;" class="col-md-12 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form">
-
-              <!--Grid row-->
+          <form id="contact-form" name="contact-form" method="post">{% csrf_token %}
+              
               <div class="row">
-
-                  <!--Grid column-->
                   <div class="col-md-6">
                       <div class="md-form mb-0">
-                          <input type="text" id="name" name="name" class="form-control">
-                          <label for="name" class="">Seu nome</label>
+                        {{form.nome}}
                       </div>
                   </div>
-                  <!--Grid column-->
+                  <br>
 
-                  <!--Grid column-->
                   <div class="col-md-6">
                       <div class="md-form mb-0">
-                          <input type="text" id="email" name="email" class="form-control">
-                          <label for="email" class="">Seu email</label>
+                        {{form.email}}
                       </div>
                   </div>
-                  <!--Grid column-->
-
               </div>
-              <!--Grid row-->
+              <br>
 
-              <!--Grid row-->
               <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-6">
                       <div class="md-form mb-0">
-                          <input type="text" id="subject" name="subject" class="form-control">
-                          <label for="subject" class="">Assunto</label>
+                        {{form.telefone}}
                       </div>
                   </div>
+                  <br>
+
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      {{form.subject}}
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="md-form">
+                      {{form.mensagem}}
+                    </div>
+
+                </div>
               </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-12">
-
-                      <div class="md-form">
-                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                          <label for="message">Sua mensagem</label>
-                      </div>
-
-                  </div>
-                  
-              </div>
-              <!--Grid row-->
-              <input onclick="sendEmail()" value="Enviar" data-wait="Please wait..."
-                    class="btn btn-primary"/>
+              <button onclick="" value="Enviar" data-wait="Please wait..."
+                    class="btn btn-primary">Enviar</button>
           </form><br>
+
           <a id="btn_menu-index" class="btn_menu-index" href="tel:067982204464" ><i id="telefone" class="fas fa-phone">
           </i><p class="numtel" id="numtel">(67) 98220-4464</p></a>
           
@@ -671,7 +667,7 @@
     <h1 id="servicos" class="modalidades">Serviços</h1>
 
       <div id="servicos" class="card col-md-5">
-        <img class="card-img-top" src="imagens/remocao_logo.png" alt="Card image cap">
+        <img class="card-img-top" src="media/imagens/remocao_logo.png" alt="Card image cap">
         <div class="card-body">
           <h4>Remoção Especializada</h4>
           <p class="card-text">
@@ -686,7 +682,7 @@
       </div>
 
       <div id="servicos" class="card col-md-5">
-      <img id="ambulancia" class="card-img-top" src="imagens/ambulancia.jpg" alt="Card image cap">
+      <img id="ambulancia" class="card-img-top" src="media/imagens/ambulancia.jpg" alt="Card image cap">
         <div class="card-body">
           <h4>Internação e Encaminhamento</h4>
           <p class="card-text">O GrupoNova percebe que o processo de desintoxicação por si só não constitui tratamento para abuso de substâncias, 
@@ -743,19 +739,14 @@
 
     </div>
   </div>
-  <script type="text/javascript" src="./js/sender_mail.js"> </script>
-  <script type="module" src="./js/require.js">
-    console.log(require())
-    console.log(process.env.PARA);
-  </script>
 
 </body>
 
 <footer>
-  <a href="https://wa.me/5517996472089" class="bt-whatsapp-site" target="_blank">
-    <div id="icon-whats" class="ico-whats"><img src="./imagens/icones/whatsapp_topo.png"></div>
-  </a>
-  <p style="text-align: center;">Copyright &copy; Desenvolvido por <a href="https://card.gconelhero.ga/" target="_blank"><img style="width: 70px; margin-top: 0px; margin-bottom: 10px;" id="logo_icon" class="logo_icon" src="https://card.gconelhero.ga/TMode/CSTECH_COMPLETE_ICON.png" alt=""></a></p>
+  <a href="https://wa.me/5567982204464" class="bt-whatsapp-site" target="_blank">
+    <div id="icon-whats" class="ico-whats"><img src="media/imagens/icones/whatsapp_topo.png"></div>
+  </a> 
+  <p style="text-align: center;">Copyright &copy; Desenvolvido por <a href="https://card.gconelhero.ga/" target="_blank"><img style="display: inline; width: 70px; margin-top: 0px; margin-bottom: 10px;" id="logo_icon" class="logo_icon" src="https://card.gconelhero.ga/TMode/CSTECH_COMPLETE_ICON.png" alt=""></a></p>
 </footer>
 
 </html>

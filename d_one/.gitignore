@@ -1,0 +1,43 @@
+*.py[cod]
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# pycharm
+.idea/
+
+# d_one
+migrations/
+ArquivosXML/
+arquivos/
+setup.py
+#djangosige/configs/configs.py
+#djangosige/media/imagens/usuarios/
+.env
+.venv/
+*.sqlite3
+env/
+
+#AMAZON pull
+middleware.py
+./configs/*

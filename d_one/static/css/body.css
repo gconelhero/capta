@@ -294,6 +294,9 @@ footer {
 #btn_menu-index-mobile {
     display: none;
 }
+.bt-whatsapp-site {
+    display: none;
+}
 
 @media only screen and (max-width: 800px) {
 
