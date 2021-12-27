@@ -159,4 +159,4 @@ new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--scr
 new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--script_logo"))();
 new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--passo_4"))();
 
-setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
+setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 5000);
