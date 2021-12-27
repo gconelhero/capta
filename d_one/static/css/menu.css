@@ -302,7 +302,7 @@
 
   .icon_menu #icon_btn {
     display: inline-block;
-    font-size: 58px; /*35px*/
+    font-size: 60px; /*35px*/
     color: rgb(110, 107, 107);
     object-fit: contain;
     margin: 10.15px;
@@ -331,6 +331,7 @@
     padding: 0;
     position: fixed;
     top: 0px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .120);
   }
 
   .list li {
