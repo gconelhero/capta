@@ -451,6 +451,10 @@ footer {
         align-items: center;
         
       }
+    .body-index {
+        height: auto;
+
+    }
 
     #btn_menu-index {
         display: block;

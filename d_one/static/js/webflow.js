@@ -1721,7 +1721,7 @@
         i.define(
             "scroll",
             (t.exports = function (t) {
-                var e = { WF_CLICK_EMPTY: "click.wf-empty-link", WF_CLICK_SCROLL: "click.wf-scroll" },
+                var e = { WF_CLICK_EMPTY: "click.wf-empty-link",/* WF_CLICK_SCROLL: "click.wf-scroll" COMENT scroll settimeout*/ },
                     n = window.location,
                     r = (function () {
                         try {
