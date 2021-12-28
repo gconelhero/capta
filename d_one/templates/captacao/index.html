@@ -801,10 +801,6 @@
   <script>
 
     var swiper = new Swiper(".swiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
           breakpoints: {
             320: {
               slidesPerView: 1,
@@ -826,7 +822,7 @@
           autoplay: {
          delay: 5000,
           },
-          loop: true,
+          loop: false,
           preloadImages: true,
           lazy: true,
         });

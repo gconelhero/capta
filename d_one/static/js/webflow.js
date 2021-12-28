@@ -2536,18 +2536,6 @@
                 v = [];
             // IMPLEMENTANDO POP DE LISTA DOS THUMBS                
             function m(t, e) {
-                t.pop(0)
-                console.log(t)
-                console.log(v)
-                
-                for(var i = 0; i < t.length; i++) {
-                    if(t.includes(t[i].cdnUrl) === true){
-                        console.log(t[i].cdnUrl)
-
-                    }
-                }
-                
-
                 return (
                     (v = f(t) ? t : [t]),
                     c || m.build(),
@@ -2566,10 +2554,6 @@
                             a(t) && n.addClass(r),
                                 (c.items = c.items.add(n)),
                                 T(t.thumbnailUrl || t.url, function (t) {
-                                    var lista = []
-                                    
-                                    //console.log($(t).attr('src'))
-                                    //console.log(lista)
                                     t.prop("width") > t.prop("height") ? S(t, "wide") : S(t, "tall"), e.append(S(t, "thumbnail-image"));
                                 });
                         }),
@@ -2838,17 +2822,28 @@
                     a = c(window, document, t, o ? "#lightbox-mountpoint" : "body"),
                     s = t(document),
                     u = ".w-lightbox";
+                    var lista = []
                 function l(t) {
                     var e,
                         i,
                         r = t.el.children(".w-json").html();
+                        
                     if (r) {
                         try {
+                            
                             r = JSON.parse(r);
+
                         } catch (t) {
                             console.error("Malformed lightbox JSON configuration.", t);
                         }
+                        
                         !(function (t) {
+                            if (lista.includes(t.items[0].url) === false ){
+                                lista.push(t.items[0].url)
+                            }else{
+                                t.items = []
+                            }
+
                             t.images &&
                                 (t.images.forEach(function (t) {
                                     t.type = "image";
@@ -2863,6 +2858,7 @@
                             (e = r.group) ? ((i = n[e]) || (i = n[e] = []), (t.items = i), r.items.length && ((t.index = i.length), i.push.apply(i, r.items))) : ((t.items = r.items), (t.index = 0));
                     } else t.items = [];
                 }
+                
                 return (
                     (r.ready = r.design = r.preview = function () {
                         (e = o && i.env("design")), a.destroy(), (n = {}), s.find(u).webflowLightBox();
