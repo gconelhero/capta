@@ -18,6 +18,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/swiper-bundle.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/body.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/modal.css' %}">
+    
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/webflow.css' %}">
 
     <script type="text/javascript" src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/jquery/jquery-3.0.0.min.js' %}"></script>
@@ -25,6 +28,8 @@
     <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/swiper-bundle.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/modal.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/webflow.js' %}"></script>
+
   </head>
   
   <title>Grupo Nova</title>
@@ -98,38 +103,6 @@
         <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/refeitorio_salto.jpg" alt="Refeitório_dois"></div>
         <div class="swiper-lazy-preloader"></div>
       </div>
-      <script>
-        var swiper = new Swiper(".swiper", {
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-              breakpoints: {
-                320: {
-                  slidesPerView: 1,
-                  spaceBetween: 0,
-                },
-                768: {
-                  slidesPerView: 1,
-                  spaceBetween: 0,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 0,
-                },
-              },
-              pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-              },
-              autoplay: {
-              delay: 5000,
-              },
-              loop: true,
-              preloadImages: false,
-              lazy: true,
-            });
-      </script>
     
     </div>
   </div>
@@ -276,33 +249,207 @@
     <div class="card container">
       
       <div class="row">
-      </div>
+      
         <div class="">
-          <!--<h2 class="card-header">Clínica 1</h2>-->
           <div id="mostrar-mais" class="card-body">
             <h4 class="card-title">Clínica Masculina</h4>
             
-              <div class="swiper">
+            <div class="swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/predio_dois.jpg" alt="Prédio"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/predio_um.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/externa_um_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/piscina_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/quadra_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/sala_reuniao_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/sala_visita_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/piscina_coberta_rumo_certo.jpg" alt="Entrada"></div>
-                <div class="swiper-lazy-preloader"></div>
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" onclick="" src="media/imagens/predio_dois.jpg" alt="Prédio">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/predio_dois.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "predio_dois.jpg",
+                          "origFileName": "predio_dois.jpg",
+                          "url": "/media/imagens/predio_dois.jpg",
+                          "_id": "predio",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria1"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" onclick="" src="media/imagens/predio_um.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/predio_um.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "predio_um.jpg",
+                          "origFileName": "predio_um.jpg",
+                          "url": "/media/imagens/predio_um.jpg",
+                          "_id": "entrada",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria1"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy"  src="media/imagens/externa_um_rumo_certo.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/externa_um_rumo_certo.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "externa_um_rumo_certo.jpg",
+                          "origFileName": "externa_um_rumo_certo.jpg",
+                          "url": "/media/imagens/externa_um_rumo_certo.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria1"
+                    }
+                    </script>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/piscina_rumo_certo.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/piscina_rumo_certo.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "piscina_rumo_certo.jpg",
+                          "origFileName": "piscina_rumo_certo.jpg",
+                          "url": "/media/imagens/piscina_rumo_certo.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria1"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/quadra_rumo_certo.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/quadra_rumo_certo.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "quadra_rumo_certo.jpg",
+                          "origFileName": "quadra_rumo_certo.jpg",
+                          "url": "/media/imagens/quadra_rumo_certo.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria1"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/sala_reuniao_rumo_certo.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/sala_reuniao_rumo_certo.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "sala_reuniao_rumo_certo.jpg",
+                          "origFileName": "sala_reuniao_rumo_certo.jpg",
+                          "url": "/media/imagens/sala_reuniao_rumo_certo.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria1"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/sala_visita_rumo_certo.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/sala_visita_rumo_certo.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "sala_visita_rumo_certo.jpg",
+                          "origFileName": "sala_visita_rumo_certo.jpg",
+                          "url": "/media/imagens/sala_visita_rumo_certo.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria1"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/piscina_coberta_rumo_certo.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/piscina_coberta_rumo_certo.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "piscina_coberta_rumo_certo.jpg",
+                          "origFileName": "piscina_coberta_rumo_certo.jpg",
+                          "url": "/media/imagens/piscina_coberta_rumo_certo.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria1"
+                    }
+                    </script>
+                  </a>
+                </div>
               </div>
-  
-              <!-- If we need pagination -->
-            <!--<div class="swiper-pagination" style="bottom: 11%;"></div>-->
-  
-            <!-- If we need navigation buttons 
-            <div style="top: 44%; color: #50a7e0;" class="swiper-button-prev"></div>
-            <div style="top: 55%; color: #50a7e0;" class="swiper-button-next"></div>-->
-  
             </div>
+
             <p id="" class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;Quarto para duas ou três pessoas, 
               quarto com ar condicionado, sala de TV, churrasqueira, piscina externa, 
               piscina coberta aquecida, sauna, quadra poliesportiva, 
@@ -330,23 +477,153 @@
             
               <div class="swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><a data-toggle="lightbox"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/piscina_st_fe.jpeg" alt="Piscina"></a></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/quarto_st_fe.jpeg" alt="Quarto"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/campo_st_fe.jpeg" alt="Campo"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/alojamento_st_fe.jpeg" alt="Alojamento_um"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/banheiro_st_fe.jpg" alt="Entrada"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/banheiro_dois_st_fe.jpg" alt="Entrada"></div>
-                <div class="swiper-lazy-preloader"></div>
-                
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/piscina_st_fe.jpeg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/piscina_st_fe.jpeg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "piscina_st_fe.jpeg",
+                          "origFileName": "piscina_st_fe.jpeg",
+                          "url": "/media/imagens/piscina_st_fe.jpeg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria2"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/quarto_st_fe.jpeg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/quarto_st_fe.jpeg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "quarto_st_fe.jpeg",
+                          "origFileName": "quarto_st_fe.jpeg",
+                          "url": "/media/imagens/quarto_st_fe.jpeg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria2"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/campo_st_fe.jpeg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/campo_st_fe.jpeg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "campo_st_fe.jpeg",
+                          "origFileName": "campo_st_fe.jpeg",
+                          "url": "/media/imagens/campo_st_fe.jpeg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria2"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/alojamento_st_fe.jpeg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/alojamento_st_fe.jpeg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "alojamento_st_fe.jpeg",
+                          "origFileName": "alojamento_st_fe.jpeg",
+                          "url": "/media/imagens/alojamento_st_fe.jpeg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria2"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/banheiro_st_fe.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/banheiro_st_fe.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "banheiro_st_fe.jpg",
+                          "origFileName": "banheiro_st_fe.jpg",
+                          "url": "/media/imagens/banheiro_st_fe.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria2"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/banheiro_dois_st_fe.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/banheiro_dois_st_fe.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "banheiro_dois_st_fe.jpg",
+                          "origFileName": "banheiro_dois_st_fe.jpg",
+                          "url": "/media/imagens/banheiro_dois_st_fe.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria2"
+                    }
+                    </script>
+                  </a>
+                </div>
               </div>
-  
-              <!-- If we need pagination -->
-              <!--<div class="swiper-pagination" style="bottom: 13%;"></div>-->
-            <!-- If we need navigation buttons 
-            <div style="top: 42%; color: #50a7e0;" class="swiper-button-prev"></div>
-            <div style="top: 42%; color: #50a7e0;" class="swiper-button-next"></div>-->
-  
             </div>
+  
             <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;Sala de TV, piscina, campo de futebol, jardim, 
               quiosque para visita dos familiares aos residentes,
               tudo isso em um ambiente amplo e agradável para o melhor acolhimento ao paciente.</p>
@@ -372,14 +649,132 @@
             <h4 class="card-title">Clínica Masculina</h4>
               <div class="swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/refeiorio_dois_salto.jpg" alt="Refeitório_dois"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/almoxarifado_salto.jpg" alt="Almoxarife"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/externa_salto.jpg" alt="Externa''"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/escritorio_salto.jpg" alt="Primeira"></div>
-                <div class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="onClick(this)" src="media/imagens/quadra_salto.jpg" alt="Entrada"></div>
-                <div class="swiper-lazy-preloader"></div>
+                
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/refeiorio_dois_salto.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "refeiorio_dois_salto.jpg",
+                          "origFileName": "refeiorio_dois_salto.jpg",
+                          "url": "/media/imagens/refeiorio_dois_salto.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria3"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/almoxarifado_salto.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/almoxarifado_salto.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "almoxarifado_salto.jpg",
+                          "origFileName": "almoxarifado_salto.jpg",
+                          "url": "/media/imagens/almoxarifado_salto.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria3"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/externa_salto.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/externa_salto.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "externa_salto.jpg",
+                          "origFileName": "externa_salto.jpg",
+                          "url": "/media/imagens/externa_salto.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria3"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/escritorio_salto.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/escritorio_salto.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "escritorio_salto.jpg",
+                          "origFileName": "escritorio_salto.jpg",
+                          "url": "/media/imagens/escritorio_salto.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria3"
+                    }
+                    </script>
+                  </a>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <a href="#" class="w-lightbox">
+                    <img id="myImg" class="img_nova swiper-lazy" src="media/imagens/quadra_salto.jpg" alt="Entrada">
+                    <script type="application/json" class="w-json">{
+                      "items": [
+                        {
+                          "cdnUrl": "/media/imagens/quadra_salto.jpg",
+                          "width": 1000,
+                          "caption": "Masculina Campo Grande - MS",
+                          "height": 680,
+                          "fileName": "quadra_salto.jpg",
+                          "origFileName": "quadra_salto.jpg",
+                          "url": "/media/imagens/quadra_salto.jpg",
+                          "_id": "piscina",
+                          "type": "image",
+                          "fileSize": 97855
+                        }
+                      ],
+                      "group": "galeria3"
+                    }
+                    </script>
+                  </a>
+                </div>
               </div>
-  
+              
               <!-- If we need pagination -->
             <!--<div class="swiper-pagination" style="bottom: 13%;"></div>-->
             <!-- If we need navigation buttons 
@@ -401,8 +796,10 @@
               <img class="modal-content carousel" id="img01">
               <div id="caption"></div>
             </div>
-  
+
+
   <script>
+
     var swiper = new Swiper(".swiper", {
           navigation: {
             nextEl: ".swiper-button-next",
@@ -430,9 +827,10 @@
          delay: 5000,
           },
           loop: true,
-          preloadImages: false,
+          preloadImages: true,
           lazy: true,
         });
+
   </script>  
       
 
@@ -764,6 +1162,7 @@
     <div id="icon-whats" class="ico-whats"><img src="media/imagens/icones/whatsapp_topo.png"></div>
   </a> 
   <p style="text-align: center;">Copyright &copy; Desenvolvido por <a href="https://card.gconelhero.ga/" target="_blank"><img style="display: inline; width: 70px; margin-top: 0px; margin-bottom: 10px;" id="logo_icon" class="logo_icon" src="https://card.gconelhero.ga/TMode/CSTECH_COMPLETE_ICON.png" alt=""></a></p>
+  
 </footer>
 
 </html>

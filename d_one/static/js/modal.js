@@ -61,7 +61,16 @@ type: 'bullets',
     },
   });
 
-  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
+/*$(document).on('click', '[class="w-lightbox"]', function() {
+  var elem = document.getElementsByClassName("w-lightbox-thumbnail")
+  console.log($('w-lightbox-thumbnail-image'))
+
+  for(var i = 0; i < elem.length; i++) {
+    $(elem[i]).find('w-lightbox-thumbnail-image')
+    var thumb = $(elem[i]).find('w-lightbox-thumbnail-image')
+    console.log(i)
+  }
+            
 });
+
+*/
