@@ -65,6 +65,8 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   $(".menu-index").css("background-color", "white");
   $(".menu-index").css("transition", "0.2s linear");
   $("#logo-mobile").css("width", "100px");
+  $("#logo-mobile").css("margin-left", "30px");
+  $("#logo-mobile").css("margin-top", "10px");
   //document.getElementById("btn_menu-index").style.transition = "0.2s linear";
   $("btn_menu-index").css("transition", "0.2s linear");
 
@@ -108,7 +110,6 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   document.getElementById("telefone").style.transition = "0.2s linear";
   document.getElementById("whatsmenu").style.transition = "0.2s linear";
   document.getElementById("numtel").style.transition = "0.2s linear";
-  document.getElementById("logo_mobile").style.width = "50px";
   document.getElementById("icon_btn").style.fontSize = "60px";
   document.getElementById("icon_btn").style.margin = "10.15px";
   document.getElementById("icon_btn").style.color = "grey";
@@ -125,7 +126,9 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
 
   $(".menu-index").css("background-color", "transparent");
   $(".menu-index").css("transition", "0.2s linear");
-  $("#logo-mobile").css("width", "260px");
+  $("#logo-mobile").css("width", "800px");
+  $("#logo-mobile").css("margin-left", "10px");
+  $("#logo-mobile").css("margin-top", "18px");
 
   $("#list").css("top", "77px");
   $("#text-menu").css("fontSize", "0px");
@@ -160,3 +163,20 @@ new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--scr
 new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--passo_4"))();
 
 setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
+
+
+function leiaMais() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("leia-mais");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Leia mais"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Leia menos"; 
+    moreText.style.display = "block ";
+  }
+}

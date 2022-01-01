@@ -263,7 +263,9 @@
     display: flex;
     justify-content: center;
     float: left;
-    width: 260px;
+    margin-top: 18px;
+    margin-left: 10px;
+    width: 800px;
   }
   
   .logo_icon {
@@ -394,25 +396,6 @@
 
   }
 
-  .img_tratamento#tcc {
-    width: 100%;
-  }
-
-  .img_tratamento#tcre {
-    width: 70%;
-  }
-
-  .img_tratamento#gc {
-    width: 85%;
-  }
-  
-  .img_tratamento#passos {
-    width: 50%;
-  }
-
-  .img_tratamento#medicamentoso {
-    width: 92%;
-  }
 }
 
 #logo_mobile {

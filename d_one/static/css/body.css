@@ -152,6 +152,7 @@ h1 {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
 .row#body-icons{
     text-align: center;
     margin-top: auto;
@@ -419,6 +420,8 @@ footer {
     display: none;
 }
 
+#leia-mais {display: none;}
+
 @media only screen and (max-width: 800px) {
 
     :root {
@@ -430,7 +433,7 @@ footer {
         --mostrar-mais: $(document).ready(function(){$('.passo_4').('overflow','')});
         
       }
-
+      #leia-mais {display: none;}
       .bt-whatsapp-site {
         position: fixed;
         left: 0px;
@@ -581,6 +584,26 @@ footer {
         bottom: 0%;
         height: 0px;
     }
+
+    .img_tratamento#tcc {
+        width: 100%;
+      }
+    
+      .img_tratamento#tcre {
+        width: 70%;
+      }
+    
+      .img_tratamento#gc {
+        width: 85%;
+      }
+      
+      .img_tratamento#passos {
+        width: 50%;
+      }
+    
+      .img_tratamento#medicamentoso {
+        width: 92%;
+      }
 
 
 }   /* end media query */

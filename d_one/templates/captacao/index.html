@@ -1,113 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    {% load static %}
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" href="{% static 'logo_teste002.ico' %}">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
-    <link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-5.1.3-dist/css/bootstrap.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-5.1.3-dist/css/bootstrap.css.map' %}">
-
-    <link rel="stylesheet" type="text/css" href="{% static 'css/swiper-bundle.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/body.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/modal.css' %}">
-    
-    
-    <link rel="stylesheet" type="text/css" href="{% static 'css/webflow.css' %}">
-
-    <script type="text/javascript" src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jquery/jquery-3.0.0.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/swiper-bundle.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/modal.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/webflow.js' %}"></script>
-
-  </head>
-  
-  <title>Grupo Nova</title>
-  
-  <header class="header">
-    
-    <div id="menu" class="menu-index">
-      <a href="#"><img id="logo" class="logo-index" src="media/imagens/logo_teste003.png" alt="logotipo"></a>
-      <a href="#"><img id="logo-mobile" class="logo-index" src="media/imagens/logo_teste003.png" alt="logotipo"></a>
-      <div class="menu_right" id="menu_principal">
-        <a id="btn_menu-index" class="btn_menu-index" href="#">Início</a>
-        <a id="btn_menu-index" class="btn_menu-index" href="#tratamento-mobile">Tratamento</a>
-        <a id="btn_menu-index" class="btn_menu-index" href="#clinicas-mobile">Clínicas</a>
-        <a id="btn_menu-index" class="btn_menu-index" href="#servicos">Serviços</a>
-        <a id="btn_menu-index" class="btn_menu-index" href="#contato">Contato</a>
-      </div>
-      <div class="menu_right" id="icon_menu" >
-        <a href="javascript:void(0)" onclick="menuFunc()" class="icon_menu"><i id="icon_btn" class="fa fa-bars">
-          <span id="text-menu" style="font-size: 60px; vertical-align: middle; margin-top: 10px;"> MENU</span></i></a>
-        <img class="menu_right" id="logo_mobile" src="">
-      </div>
-      <div class="contatomenu" id="contatomenu">
-      <a id="btn_menu-index" class="btn_menu-index" href="tel:067982204464" ><i id="telefone" class="fas fa-phone">
-        </i><p class="numtel" id="numtel">(67) 98220-4464</p>
-      <a id="btn_menu-index" class="btn_menu-index" href="https://wa.me/5567982204464" target="_blank"><i id="whatsmenu" class="fab fa-whatsapp">
-        </i>
-      </div>
-    </div>
-
-      <div class="list_menu" id="list_menu" onclick="menuClose()">
-        <ul class="list" id="list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#tratamento-mobile">Tratamento</a></li>
-          <li><a href="#clinicas-mobile">Clínicas</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li style="align-items: center; display: block;"><a href="https://card.gconelhero.ga/" target="_blank"><img id="logo_icon" class="logo_icon" src="https://card.gconelhero.ga/TMode/CSTECH_COMPLETE_ICON.png" alt=""></a></li>
-        </ul>
-      </div>
-  </header>
+{% include 'captacao/base.html' %}
 
 <body class="body-index">
 
-  <!-- Page Loader -->
-  <div class="page-loader-wrapper">
-    <div class="loader">
-      <div class="md-preloader">
-        <svg viewbox="0 0 75 75">
-          <circle cx="37.5" cy="37.5" r="33.5" class="pl-red" stroke-width="4" />
-        </svg>
-      </div>
-      <p class="loader-message">Carregando...</p>
-    </div>
-  </div>
-  <!-- #Page Loader -->
+  {% include 'captacao/loader.html' %}
 
-  <!-- Overlay -->
-  <div class="overlay"></div>
-  <!--  #Overlay -->
-  
-  <div style="margin: 0px;" id="banner" class="row">
-    <label id="texto-banner">EXPECIALISTAS NO TRATAMENTO <br> PARA ABUSO DE ÁLCOOL E OUTRAS DROGAS</label>
-    <label id="texto-banner-mobile">EXPECIALISTAS NO TRATAMENTO <br> PARA ABUSO DE ÁLCOOL E OUTRAS DROGAS</label>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/predio_um.jpg" alt="Entrada"></div>
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/externa_um_rumo_certo.jpg" alt="Entrada"></div>
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/piscina_rumo_certo.jpg" alt="Entrada"></div>
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/sala_visita_rumo_certo.jpg" alt="Entrada"></div>
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/refeiorio_dois_salto.jpg" alt="Refeitório_dois"></div>    
-        <div id="banner" class="swiper-slide"><img id="myImg" class="img_banner swiper-lazy" onclick="onClick(this)" src="media/imagens/refeitorio_salto.jpg" alt="Refeitório_dois"></div>
-        <div class="swiper-lazy-preloader"></div>
-      </div>
+  {% include 'captacao/banner.html' %}
     
-    </div>
-  </div>
-
-  
     
   <div id="caixa-texto" class="container">
     <div class="row">
@@ -249,9 +147,8 @@
     <div class="card container">
       
       <div class="row">
-      
-        <div class="">
-          <div id="mostrar-mais" class="card-body">
+        <div>
+          <div class="card-body">
             <h4 class="card-title">Clínica Masculina</h4>
             
             <div class="swiper">
@@ -832,6 +729,90 @@
 
     </div>
   </div>
+
+<!--
+  <div class="row">
+    <div>
+        <div class="swiper">
+          <div style="max-height: min-content;" class="swiper-wrapper">  
+            <div id="swiper-card" class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="" src="media/imagens/predio_dois.jpg" alt="Prédio"></div>
+            <div id="swiper-card" class="swiper-slide"><img id="myImg" class="img_nova swiper-lazy" onclick="" src="media/imagens/predio_dois.jpg" alt="Prédio"></div>
+
+            <div id="swiper-card" class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                <h4 class="card-title">Terapia Cognitiva Comportamental</h4>
+                  <div><img id="tcc" class="img_tratamento" src="media/imagens/tratamento/TCC.jpg"></div><br>
+
+                <p class="card-text">
+              
+                  TCC é uma ferramenta poderosa no tratamento <span id="dots">...</span><span id="leia-mais">
+                  porque pode ser usada em muitos vícios diferentes, como, por exemplo, 
+                  vício em comida, vício em álcool, vício em medicamentos prescritos e outras drogas. 
+                  A TCC não apenas pode ajudá-lo a reconhecer seus padrões de comportamento prejudiciais à saúde, 
+                  mas também pode ajudá-lo a aprender a identificar os gatilhos e a desenvolver habilidades de enfrentamento. 
+                  A TCC também pode ser combinada com outras técnicas terapêuticas.</span>
+                </p>
+                <button onclick="leiaMais()" id="myBtn" class="btn btn-primary">Leia mais</button>
+
+                </div>
+              </div>
+            </div>
+
+            <div id="swiper-card" class="swiper-slide">
+              <div  class="card">
+                <div class="card-body">
+                <h4 class="card-title">Terapia Comportamental Racional Emotiva</h4>
+                <div><img id="tcre" class="img_tratamento" src="media/imagens/tratamento/TCER.jpeg"></div><br>
+                <p class="card-text">
+              
+                  A TCRE pode ajudá-lo a reconhecer seus pensamentos negativos<span id="dots">...</span><span id="leia-mais">
+                  e fornecer maneiras de combater os sentimentos de autodestruição. 
+                  O objetivo do TCRE é ajudá-lo a perceber que o poder do pensamento racional 
+                  está dentro de você e não está relacionado a situações externas ou fatores estressantes.</span>
+                </p>
+                <button onclick="leiaMais()" id="myBtn" class="btn btn-primary">Leia mais</button>
+
+                </div>
+              </div>
+            </div>
+            
+
+        </div>
+      </div>
+      <script>
+
+        var swiper = new Swiper(".swiper", {
+              breakpoints: {
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+              },
+              pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+              },
+              autoplay: {
+             delay: 5000,
+              },
+              loop: false,
+              preloadImages: true,
+              lazy: true,
+            });
+    
+      </script>  
+    </div>
+  </div>
+-->
   
   <div id="caixa-texto" class="container">
     <div id="divisao-card" class="divisao" style="background-color: rgb(230, 230, 230); padding: 0.5px;" class="row">
@@ -840,13 +821,11 @@
     </div>
   </div>
 
-
   <h1 class="modalidades">Métodos</h1>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">Terapia Cognitiva Comportamental</h4>
@@ -863,125 +842,113 @@
             <a href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
           </div>
         </div>
-  
-
-
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Terapia Comportamental Racional Emotiva</h4>
-      <div><img id="tcre" class="img_tratamento" src="media/imagens/tratamento/TCER.jpeg"></div><br>
-      <p class="card-text"> 
-        
-        A TCRE pode ajudá-lo a reconhecer seus pensamentos negativos
-         e fornecer maneiras de combater os sentimentos de autodestruição. 
-         O objetivo do TCRE é ajudá-lo a perceber que o poder do pensamento racional 
-         está dentro de você e não está relacionado a situações externas ou fatores estressantes.
-        
-      </p>
-      
-      <a href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+      </div>
     </div>
   </div>
 
-
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12"> 
+        <div class="card">
+          <div class="card-body">
+          <h4 class="card-title">Terapia Comportamental Racional Emotiva</h4>
+            <div><img id="tcre" class="img_tratamento" src="media/imagens/tratamento/TCER.jpeg"></div><br>
+              <p class="card-text"> 
+                
+                A TCRE pode ajudá-lo a reconhecer seus pensamentos negativos
+                e fornecer maneiras de combater os sentimentos de autodestruição. 
+                O objetivo do TCRE é ajudá-lo a perceber que o poder do pensamento racional 
+                está dentro de você e não está relacionado a situações externas ou fatores estressantes.
+                
+              </p>
+              
+              <a href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!--<h1 class="text-center">Tratamento</h1>-->
-<div class="container">
-<div class="row">
-<div class="col-sm-12">
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Gerenciamento de Contingência</h4>
-      <div><img id="gc" class="img_tratamento" src="media/imagens/tratamento/GC.jpg"></div><br>
-      <p class="card-text"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+          <h4 class="card-title">Gerenciamento de Contingência</h4>
+            <div><img id="gc" class="img_tratamento" src="media/imagens/tratamento/GC.jpg"></div><br>
+              <p class="card-text"> 
 
-        GC pode ser usado para tratar uma ampla variedade de vícios, 
-        incluindo álcool, narcóticos e tabaco. A terapia de 
-        gerenciamento de contingências reforça seu comportamento positivo, 
-        isto é, manter a sobriedade, dando-lhe recompensas tangíveis. 
-        Esse tipo de tratamento tem sido usado com sucesso para combater a recaída, 
-        de acordo com o National Institute on Drug Abuse.
+                GC pode ser usado para tratar uma ampla variedade de vícios, 
+                incluindo álcool, narcóticos e tabaco. A terapia de 
+                gerenciamento de contingências reforça seu comportamento positivo, 
+                isto é, manter a sobriedade, dando-lhe recompensas tangíveis. 
+                Esse tipo de tratamento tem sido usado com sucesso para combater a recaída, 
+                de acordo com o National Institute on Drug Abuse.
 
-        
-      </p>
-      <a href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+                
+              </p>
+              <a href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
 
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+          <h4 class="card-title">Os 12 Passos</h4>
+            <div><img id="passos" class="img_tratamento" src="media/imagens/tratamento/12passo.jpg"></div><br>
+              <p class="card-text"> 
+                
+                A terapia de facilitação de doze passos (programa de 12 passo) 
+                pode ser usada para tratar o abuso de álcool e substâncias. 
+                É uma forma de terapia de grupo que inclui o reconhecimento 
+                de que o vício tem várias consequências negativas que podem ser sociais, 
+                emocionais, espirituais e físicas. Esse tipo de terapia começa com a aceitação, 
+                depois segue para a rendição a um poder superior e, por fim, 
+                faz a transição para o envolvimento em reuniões de grupo consistentes. 
+                Programas como os populares Alcoólicos Anônimos e Narcóticos Anônimos usam reuniões de grupo para discussão e ajuda mútua.
 
-
-<div class="container">
-<div class="row">
-<div class="col-sm-12">
-
-  <!--<h1 class="text-center">Tratamento</h1>-->
-
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Os 12 Passos</h4>
-      <div><img id="passos" class="img_tratamento" src="media/imagens/tratamento/12passo.jpg"></div><br>
-      <p class="card-text"> 
-        
-        A terapia de facilitação de doze passos (programa de 12 passo) 
-        pode ser usada para tratar o abuso de álcool e substâncias. 
-        É uma forma de terapia de grupo que inclui o reconhecimento 
-        de que o vício tem várias consequências negativas que podem ser sociais, 
-        emocionais, espirituais e físicas. Esse tipo de terapia começa com a aceitação, 
-        depois segue para a rendição a um poder superior e, por fim, 
-        faz a transição para o envolvimento em reuniões de grupo consistentes. 
-        Programas como os populares Alcoólicos Anônimos e Narcóticos Anônimos usam reuniões de grupo para discussão e ajuda mútua.
-
-        
-      </p>
-      <a href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+                
+              </p>
+              <a href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
 
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+          <h4 class="card-title">Tratamento Medicamentoso</h4>
+            <div><img id="medicamentoso" class="img_tratamento" src="media/imagens/tratamento/Medicamento.jpg"></div>
+              <p class="card-text"> 
 
+                A medicação pode desempenhar um papel importante 
+                na recuperação quando combinada com terapias comportamentais. 
+                Certos medicamentos podem ser usados ​​para reduzir os desejos, 
+                melhorar o humor e diminuir os comportamentos de dependência e de abstinência.
+                Medicamentos como o acamprosato podem ajudar a reduzir o hábito de beber.
+                Se você ou um ente querido está lutando contra um vício, não precisa lutar sozinho. 
+                Existem tratamentos de sucesso disponíveis que podem ajudá-lo a superar seu vício.
 
-<div class="container">
-<div class="row">
-<div class="col-sm-12">
-
-  <!--<h1 class="text-center">Tratamento</h1>-->
-
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Tratamento Medicamentoso</h4>
-      <div><img id="medicamentoso" class="img_tratamento" src="media/imagens/tratamento/Medicamento.jpg"></div>
-      <p class="card-text"> 
-
-        A medicação pode desempenhar um papel importante 
-        na recuperação quando combinada com terapias comportamentais. 
-        Certos medicamentos podem ser usados ​​para reduzir os desejos, 
-        melhorar o humor e diminuir os comportamentos de dependência e de abstinência.
-        Medicamentos como o acamprosato podem ajudar a reduzir o hábito de beber.
-        Se você ou um ente querido está lutando contra um vício, não precisa lutar sozinho. 
-        Existem tratamentos de sucesso disponíveis que podem ajudá-lo a superar seu vício.
-
-        
-      </p>
-      
-      <a id="servicos-mobile" href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+              </p>
+              <a id="servicos-mobile" href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-
-</div>
-</div>
-</div>
   
 <div id="caixa-texto" class="container">
   <div id="divisao-card" class="divisao" style="background-color: rgb(230, 230, 230); padding: 0.5px;" class="row">
@@ -996,74 +963,62 @@
 
     <!--Section: Contact v.2-->
 <section class="mb-12">
-  <!--Section description-->
 
   <div class="row">
+    <div style="margin-bottom: 0%;" class="col-md-12 mb-md-0 mb-5">
+    <form id="contact-form" name="contact-form" method="post">{% csrf_token %}
 
-      <!--Grid column-->
-      <div style="margin-bottom: 0%;" class="col-md-12 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" method="post">{% csrf_token %}
-              
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                        {{form.nome}}
-                      </div>
-                  </div>
-                  <br>
-
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                        {{form.email}}
-                      </div>
-                  </div>
-              </div>
-              <br>
-
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                        {{form.telefone}}
-                      </div>
-                  </div>
-                  <br>
-
-                <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      {{form.subject}}
-                    </div>
-                </div>
-            </div>
-            <br>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="md-form">
-                      {{form.mensagem}}
-                    </div>
-
-                </div>
-              </div>
-              <button onclick="" value="Enviar" data-wait="Please wait..."
-                    class="btn btn-primary">Enviar</button>
-          </form><br>
-
-          <a id="btn_menu-index" class="btn_menu-index" href="tel:067982204464" ><i id="telefone" class="fas fa-phone">
-          </i><p class="numtel" id="numtel">(67) 98220-4464</p></a>
-          
-          <div class="status"></div>
-          
+      <div class="row">
+        <div class="col-md-6">
+          <div class="md-form mb-0">
+            {{form.nome}}
+          </div>
+        </div>
+      
+        <div class="col-md-6">
+          <div class="md-form mb-0">
+            {{form.email}}
+          </div>
+        </div>
       </div>
-      <!--Grid column-->
+      <br>
 
-      <!--Grid column-->
-      <!--Grid column-->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="md-form mb-0">
+            {{form.telefone}}
+          </div>
+        </div>
+      
 
+        <div class="col-md-6">
+          <div class="md-form mb-0">
+            {{form.subject}}
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="md-form">
+            {{form.mensagem}}
+          </div>
+        </div>
+      </div>
+      <button onclick="" value="Enviar" data-wait="Please wait..." class="btn btn-primary">Enviar</button>
+      </form>
+      <br>
+      <a id="btn_menu-index" class="btn_menu-index" href="tel:067982204464" ><i id="telefone" class="fas fa-phone">
+      </i><p class="numtel" id="numtel">(67) 98220-4464</p></a>
+  
+      <div class="status"></div>
+          
+    </div>
   </div>
 
 </section>
 <!--Section: Contact v.2-->
-
 
 <div id="caixa-texto" class="container">
   <div id="divisao-card" class="divisao" style="background-color: rgb(230, 230, 230); padding: 0.5px; margin-top: 0px;" class="row">
@@ -1073,12 +1028,11 @@
 </div>
 
 
-<div id="servicos" class="container">
-  <div id="body-icons" class="row">
+  <div id="servicos" class="container">
+    <div id="body-icons" class="row">
     <h1 id="servicos" class="modalidades">Serviços</h1>
-
       <div id="servicos" class="card col-md-5">
-        <img class="card-img-top" src="media/imagens/remocao_logo.png" alt="Card image cap">
+      <img class="card-img-top" src="media/imagens/remocao_logo.png" alt="Card image cap">
         <div class="card-body">
           <h4>Remoção Especializada</h4>
           <p class="card-text">
@@ -1089,68 +1043,61 @@
           </p>
             
         </div>
-        <a id="servicos" href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+      <a id="servicos" href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
       </div>
 
       <div id="servicos" class="card col-md-5">
       <img id="ambulancia" class="card-img-top" src="media/imagens/ambulancia.jpg" alt="Card image cap">
         <div class="card-body">
-          <h4>Internação e Encaminhamento</h4>
+        <h4>Internação e Encaminhamento</h4>
           <p class="card-text">O GrupoNova percebe que o processo de desintoxicação por si só não constitui tratamento para abuso de substâncias, 
             mas é parte de um contínua de cuidados para o tratamento de abuso de substâncias.
             Para isso contamos com médicos, terapeutas e especialistas em saúde comportamental.
           </p>
             
         </div>
-        <a id="servicos" href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
+      <a id="servicos" href="https://wa.me/5567982204464" target="_blank" class="btn btn-primary">Saiba mais</a>
       </div>
     </div>
 
-      <div id="caixa-texto" class="container">
-        <div id="divisao-card" class="divisao" style="background-color: rgb(230, 230, 230); padding: 0.5px;" class="row">
-          <div class="col-md-12">
-          </div>
+    <div id="caixa-texto" class="container">
+      <div id="divisao-card" class="divisao" style="background-color: rgb(230, 230, 230); padding: 0.5px;" class="row">
+        <div class="col-md-12">
         </div>
       </div>
+    </div>
       
 
-      <div id="caixa-texto" class="card container">
-        <h1 id="titulo" class="quem-somos">Quem Somos?</h1>
-    
-        <div class="row">
-          <div class="col-md-12">
-            <p id="texto2">
-              Somos especializados em desintoxicação com supervisão médica e terapêutica de pacientes que sofrem por uso de álcool e outras drogas.
-            </p>
-            <p id="texto2">
-              Estamos atuando há mais de 20 anos, assessoramos e prestamos nossos serviços para diversos centros de tratamento pelo Brasil, 
-              e já atendemos milhares de pacientes e seus familiares ao longo desses anos.
-              Possuímos experiência em tratar e encaminhar pacientes
-              Contamos com profissionais que são referência nos tratamenos psicológicos, 
-              psiquiátricos e terapêuticos.
-            </p>
-          </div>
+    <div id="caixa-texto" class="card container">
+      <h1 id="titulo" class="quem-somos">Quem Somos?</h1>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p id="texto2">
+            Somos especializados em desintoxicação com supervisão médica e terapêutica de pacientes que sofrem por uso de álcool e outras drogas.
+          </p>
+          <p id="texto2">
+            Estamos atuando há mais de 20 anos, assessoramos e prestamos nossos serviços para diversos centros de tratamento pelo Brasil, 
+            e já atendemos milhares de pacientes e seus familiares ao longo desses anos.
+            Possuímos experiência em tratar e encaminhar pacientes
+            Contamos com profissionais que são referência nos tratamenos psicológicos, 
+            psiquiátricos e terapêuticos.
+          </p>
         </div>
-    
-    
-        <div class="row">
-          <div class="col-md-12">
-            <p id="texto2">
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <p id="texto2">
             O Grupo Nova entende que o tratamento bem como a prevenção para abuso de substâncias,
             é um processo de trabalho que deve ser realizado com cuidado e responsabilidade,
             é a parte fundamental de um contínuo cuidado.<br><br>
-        </p> 
-      </div>     
+          </p> 
+        </div>     
       </div>
-
-      <!--<h1 class="text-center">Tratamento</h1>-->
-      
-      </div>
-      
-
     </div>
   </div>
-
 </body>
 
 <footer>
