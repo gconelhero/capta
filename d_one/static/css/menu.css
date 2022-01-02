@@ -239,11 +239,16 @@
 
   .contatomenu {
     display: none;
-}
+  }
 
-.icon_menu {
+  a#btn_menu-index {
+    display: none;
+    margin: 0px;
+  }
+
+  .icon_menu {
     float: right;
-}
+  }
 
   #texto-banner {
     display: none;
@@ -285,7 +290,7 @@
     display: none;
     float: right;
     margin: 10px;
-    margin-right: 10px;
+    margin-right: 0px;
     width: 50px;
     overflow: hidden;
     transition: 0.2s linear;
@@ -308,7 +313,7 @@
     color: rgb(110, 107, 107);
     object-fit: contain;
     margin: 10.15px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     transition: 0.2s linear; 
   }
   .icon_menu #icon_btn:hover{

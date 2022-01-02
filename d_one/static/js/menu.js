@@ -48,9 +48,9 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   document.getElementById("logo_mobile").style.width = "20px";
   document.getElementById("contatomenu").style.width = "190px";
   document.getElementById("contatomenu").style.transition = "0.2s linear";
-  document.getElementById("icon_btn").style.fontSize = "35px";
-  document.getElementById("icon_btn").style.margin = "2px";
-  document.getElementById("icon_btn").style.color = "black";
+  $("#icon_btn").css("font-size", "35px");
+  $("#icon_btn").css("margin", "2px");
+  $("#icon_btn").css("color", "black");
 
   //document.getElementById("texto-banner").style.zIndex = "0";
   $("#texto-banner").css("color", "transparent");
@@ -64,8 +64,8 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
 
   $(".menu-index").css("background-color", "white");
   $(".menu-index").css("transition", "0.2s linear");
-  $("#logo-mobile").css("width", "100px");
-  $("#logo-mobile").css("margin-left", "30px");
+  $("#logo-mobile").css("width", "160px");
+  $("#logo-mobile").css("margin-left", "20px");
   $("#logo-mobile").css("margin-top", "10px");
   //document.getElementById("btn_menu-index").style.transition = "0.2s linear";
   $("btn_menu-index").css("transition", "0.2s linear");
@@ -74,6 +74,9 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   
   
   $("#text-menu").css("fontSize", "large");
+  $("#text-menu").css("display", "initial");
+  $("#text-menu").css("margin-right", "15px");
+  $("#text-menu").css("transition", "0.5s linear");
   /*
   for(var i = 0; i < elements.length; i++) {
     
@@ -110,11 +113,10 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   document.getElementById("telefone").style.transition = "0.2s linear";
   document.getElementById("whatsmenu").style.transition = "0.2s linear";
   document.getElementById("numtel").style.transition = "0.2s linear";
-  document.getElementById("icon_btn").style.fontSize = "60px";
-  document.getElementById("icon_btn").style.margin = "10.15px";
-  document.getElementById("icon_btn").style.color = "grey";
 
-  //document.getElementById("texto-banner").style.zIndex = "1";
+  $("#icon_btn").css("font-size", "60px");
+  $("#icon_btn").css("margin", "10.15px");
+  $("#icon_btn").css("color", "grey");
   
   $("#texto-banner").css("color", "white");
   $("#texto-banner").css("transiction", "0.1s linear");
@@ -132,7 +134,7 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
 
   $("#list").css("top", "77px");
   $("#text-menu").css("fontSize", "0px");
-  $("#text-menu").css("display", "initial");
+  $("#text-menu").css("display", "none");
 
   //document.getElementById("btn_menu-index").style.transition = "0.2s linear";
   $("btn_menu-index").css("transition", "0.2s linear");
