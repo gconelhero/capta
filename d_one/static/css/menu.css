@@ -82,14 +82,15 @@
   justify-content: center;
 }
 
-#numtel {
+#numtel-menu {
   display: flex; 
   margin: auto; 
   padding-right: 0px; 
   justify-content: center;
   transition: 0.1s linear;
 }
-#telefone {
+
+#telefone-menu {
   display: flex; 
   margin: auto; 
   padding-right: 0px; 
@@ -98,7 +99,8 @@
   transition: 0.1s linear;
 }
 
-  #whatsmenu {
+
+#whatsmenu {
   display: flex; 
   margin: auto; 
   padding-right: 0px; 
@@ -106,7 +108,8 @@
   font-size: 50px;
   width: 50px;
 }
-.numtel {
+
+.numtel#numtel-menu {
   display: flex; 
   margin: auto; 
   padding-right: 0px; 

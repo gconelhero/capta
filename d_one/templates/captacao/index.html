@@ -5,7 +5,10 @@
   {% include 'captacao/loader.html' %}
 
   {% include 'captacao/banner.html' %}
-    
+
+  {% load tawkto_tags %}
+  
+  {% tawkto_script %}
     
   <div id="caixa-texto" class="container">
     <div class="row">
@@ -60,7 +63,7 @@
 
   <div style="padding: 30px;" id="caixa-texto" class="container">
     <div style="background-color: rgb(230, 230, 230); padding: 0.5px;" class="row">
-      <div class="col-md-12">
+      <div id="modalidades" class="col-md-12">
       </div>
     </div>
   </div>
@@ -851,13 +854,13 @@
       <div class="col-sm-12"> 
         <div class="card">
           <div class="card-body">
-          <h4 class="card-title">Terapia Comportamental Racional Emotiva</h4>
+          <h4 class="card-title">Terapia Racional-Emotiva Comportamental</h4>
             <div><img id="tcre" class="img_tratamento" src="media/imagens/tratamento/TCER.jpeg"></div><br>
               <p class="card-text"> 
                 
-                A TCRE pode ajudá-lo a reconhecer seus pensamentos negativos
+                A TREC pode ajudá-lo a reconhecer seus pensamentos negativos
                 e fornecer maneiras de combater os sentimentos de autodestruição. 
-                O objetivo do TCRE é ajudá-lo a perceber que o poder do pensamento racional 
+                O objetivo do TREC é ajudá-lo a perceber que o poder do pensamento racional 
                 está dentro de você e não está relacionado a situações externas ou fatores estressantes.
                 
               </p>
@@ -959,7 +962,7 @@
 
 <div class="container">
   <div id="body-icons" class="row">
-    <h1  class="modalidades">Contato</h1>
+    <h1 class="modalidades">Contato</h1>
 
     <!--Section: Contact v.2-->
 <section class="mb-12">
@@ -969,13 +972,13 @@
     <form id="contact-form" name="contact-form" method="post">{% csrf_token %}
 
       <div class="row">
-        <div class="col-md-6">
+        <div id="contato-form" class="col-md-6">
           <div class="md-form mb-0">
             {{form.nome}}
           </div>
         </div>
       
-        <div class="col-md-6">
+        <div id="contato-form" class="col-md-6">
           <div class="md-form mb-0">
             {{form.email}}
           </div>
@@ -984,14 +987,14 @@
       <br>
 
       <div class="row">
-        <div class="col-md-6">
+        <div id="contato-form" class="col-md-6">
           <div class="md-form mb-0">
             {{form.telefone}}
           </div>
         </div>
       
 
-        <div class="col-md-6">
+        <div id="contato-form" class="col-md-6">
           <div class="md-form mb-0">
             {{form.subject}}
           </div>
@@ -1009,8 +1012,10 @@
       <button onclick="" value="Enviar" data-wait="Please wait..." class="btn btn-primary">Enviar</button>
       </form>
       <br>
-      <a id="btn_menu-index" class="btn_menu-index" href="tel:067982204464" ><i id="telefone" class="fas fa-phone">
-      </i><p class="numtel" id="numtel">(67) 98220-4464</p></a>
+      <div id="telefone-contato">
+        <a id="btn_menu-index" class="btn_menu-index" href="tel:067982204464" ><i id="telefone" class="fas fa-phone">
+        </i><p class="numtel" id="numtel">(67) 98220-4464</p></a>
+     </div>
   
       <div class="status"></div>
           
@@ -1022,15 +1027,15 @@
 
 <div id="caixa-texto" class="container">
   <div id="divisao-card" class="divisao" style="background-color: rgb(230, 230, 230); padding: 0.5px; margin-top: 0px;" class="row">
-    <div class="col-md-12">
+    <div id="servicos-link" class="col-md-12">
     </div>
   </div>
 </div>
 
 
-  <div id="servicos" class="container">
+  <div class="container">
     <div id="body-icons" class="row">
-    <h1 id="servicos" class="modalidades">Serviços</h1>
+    <h1 class="modalidades">Serviços</h1>
       <div id="servicos" class="card col-md-5">
       <img class="card-img-top" src="media/imagens/remocao_logo.png" alt="Card image cap">
         <div class="card-body">
@@ -1062,7 +1067,7 @@
 
     <div id="caixa-texto" class="container">
       <div id="divisao-card" class="divisao" style="background-color: rgb(230, 230, 230); padding: 0.5px;" class="row">
-        <div class="col-md-12">
+        <div id="nova" class="col-md-12">
         </div>
       </div>
     </div>
@@ -1098,14 +1103,26 @@
       </div>
     </div>
   </div>
-</body>
-
-<footer>
   <a href="https://wa.me/5567982204464" class="bt-whatsapp-site" target="_blank">
-    <div id="icon-whats" class="ico-whats"><img src="media/imagens/icones/whatsapp_topo.png"></div>
+    <div id="icon-whats" class="ico-whats"><img id="whats-btn-mobile" src="media/imagens/icones/whatsapp_topo.png"></div>
   </a> 
-  <p style="text-align: center;">Copyright &copy; Desenvolvido por <a href="https://card.gconelhero.ga/" target="_blank"><img style="display: inline; width: 70px; margin-top: 0px; margin-bottom: 10px;" id="logo_icon" class="logo_icon" src="https://card.gconelhero.ga/TMode/CSTECH_COMPLETE_ICON.png" alt=""></a></p>
+  <footer>
+    <p style="text-align: center;">Copyright &copy; Desenvolvido por <a href="https://card.gconelhero.ga/" target="_blank"><img style="display: inline; width: 70px; margin-top: 0px; margin-bottom: 10px;" id="logo_icon" class="logo_icon" src="https://card.gconelhero.ga/TMode/CSTECH_COMPLETE_ICON.png" alt=""></a></p>
+    
+  </footer>
   
-</footer>
-
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/61d32deb80b2296cfdd4da11/1fogemp6s';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
 </html>

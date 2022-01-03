@@ -36,18 +36,20 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   $(".logo-index").css("filter", "grayscale(0) invert(0)");
   //document.getElementById("logo_right").style.width = "150px";
   document.getElementById("logo_icon").style.width = "60px";
-  document.getElementById("telefone").style.fontSize = "30px";
+  document.getElementById("telefone-menu").style.fontSize = "30px";
   
   document.getElementById("whatsmenu").style.fontSize = "30px";
   document.getElementById("whatsmenu").style.width = "30px";
-  document.getElementById("numtel").style.fontSize = "0px";
-  document.getElementById("telefone").style.transition = "0.2s linear"; 
+  document.getElementById("telefone-menu").style.transition = "0.2s linear"; 
   document.getElementById("whatsmenu").style.transition = "0.2s linear"; 
   document.getElementById("whatsmenu").style.transition = "0.2s linear"; 
 
   document.getElementById("logo_mobile").style.width = "20px";
   document.getElementById("contatomenu").style.width = "190px";
   document.getElementById("contatomenu").style.transition = "0.2s linear";
+  
+  $("#numtel-menu").css("font-size", "0px");
+  
   $("#icon_btn").css("font-size", "35px");
   $("#icon_btn").css("margin", "2px");
   $("#icon_btn").css("color", "black");
@@ -104,15 +106,17 @@ if ( window.scroll > 60.00000000000000 || document.documentElement.scrollTop > 6
   //document.getElementById("logo_right").style.width = "280px";
   document.getElementById("logo_icon").style.width = "100px";
   
-  document.getElementById("telefone").style.fontSize = "50px";
+  document.getElementById("telefone-menu").style.fontSize = "50px";
   document.getElementById("whatsmenu").style.fontSize = "50px";
   document.getElementById("whatsmenu").style.width = "50px";
   document.getElementById("contatomenu").style.width = "320px";
-  document.getElementById("numtel").style.fontSize = "20px";
   document.getElementById("contatomenu").style.transition = "0.2s linear";
-  document.getElementById("telefone").style.transition = "0.2s linear";
+  document.getElementById("telefone-menu").style.transition = "0.2s linear";
   document.getElementById("whatsmenu").style.transition = "0.2s linear";
   document.getElementById("numtel").style.transition = "0.2s linear";
+
+  $("#numtel-menu").css("font-size", "20px");
+  $("#numtel-menu").css("transition", "0.2s linear");
 
   $("#icon_btn").css("font-size", "60px");
   $("#icon_btn").css("margin", "10.15px");
@@ -163,6 +167,7 @@ new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--scr
 new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--script_banner"))();
 new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--script_logo"))();
 new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--passo_4"))();
+new Function(getComputedStyle(document.documentElement)?.getPropertyValue("--contato-form"))();
 
 setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 

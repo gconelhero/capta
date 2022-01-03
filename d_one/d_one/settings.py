@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'captacao',
+    'tawkto',
 ]
 
 MIDDLEWARE = [
@@ -144,3 +145,10 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = config('EMAIL_PORT')
 EMAIL_USE_TLS = config('EMAIL_USE_TLS')
+
+TAWKTO_ID_SITE=config('TAWKTO_ID_SITE')
+TAWKTO_API_KEY=config('TAWKTO_API_KEY')
+TAWKTO_IS_SECURE=True
+SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
+
+
