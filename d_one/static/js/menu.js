@@ -1,3 +1,4 @@
+
 var jqscript = document.createElement('script');
 jqscript.src = "js/jquery/jquery-3.3.1.min.js";
 jqscript.type = 'text/javascript';
@@ -187,3 +188,4 @@ function leiaMais() {
     moreText.style.display = "block ";
   }
 }
+

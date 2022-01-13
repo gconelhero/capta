@@ -465,6 +465,18 @@ footer {
     .col-md-12#passo_4 {
         margin-top: 0px;
     }
+    .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    .card-img-top#ambulancia {
+        width: 160px;
+        height: auto;
+    }
+
+    .quem-somos#titulo {
+        font-size: 35px;
+    }
 
     #leia-mais {display: none;}
     .bt-whatsapp-site {
@@ -529,7 +541,6 @@ footer {
 
     .card-text {
         font-size: 14px;
-    
     }
 
     #texto-banner-mobile {
@@ -634,19 +645,20 @@ footer {
       }
     
       .img_tratamento#tcre {
-        width: 70%;
+        width: 60%;
       }
     
       .img_tratamento#gc {
-        width: 85%;
+        width: 75%;
       }
       
       .img_tratamento#passos {
-        width: 50%;
+        width: 40%;
       }
     
       .img_tratamento#medicamentoso {
-        width: 92%;
+        width: 85%;
+        margin-bottom: 10px;
         
     }
 
